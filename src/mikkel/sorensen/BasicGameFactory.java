@@ -1,4 +1,4 @@
-package Mikkel.Sorensen;
+package mikkel.sorensen;
 
 import com.almasb.fxgl.entity.*;
 import com.almasb.fxgl.physics.BoundingShape;
@@ -6,6 +6,8 @@ import com.almasb.fxgl.physics.HitBox;
 import com.almasb.fxgl.physics.PhysicsComponent;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
+
+
 
 @SetEntityFactory
 public class BasicGameFactory implements EntityFactory{
@@ -22,7 +24,7 @@ public class BasicGameFactory implements EntityFactory{
     public Entity newCoin(SpawnData data) {
         return Entities.builder()
                 .from(data)
-                .viewFromNodeWithBBox(new Circle(data.<Integer>get("width") / 2, Color.GOLD))
+                .viewFromNodeWithBBox(new Circle(data.<Integer>get("width") / 2, Color.GOLD)) //Generer bounding box, med view
                 .build();
 
     }
