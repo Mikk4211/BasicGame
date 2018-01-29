@@ -1,3 +1,5 @@
+package Mikkel.Sorensen;
+
 import com.almasb.fxgl.entity.*;
 import com.almasb.fxgl.physics.BoundingShape;
 import com.almasb.fxgl.physics.HitBox;
@@ -8,7 +10,7 @@ import javafx.scene.shape.Circle;
 @SetEntityFactory
 public class BasicGameFactory implements EntityFactory{
 
-    @Spawns("platform")     //Generer hitbox for platform
+    @Spawns("platform")     //Generere hitbox for platform
     public Entity newPlatform(SpawnData data){
         return Entities.builder()
                 .from(data)
