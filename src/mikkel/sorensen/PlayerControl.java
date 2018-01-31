@@ -2,18 +2,41 @@
 // https://github.com/Mikk4211
 
 package mikkel.sorensen;
+import com.almasb.fxgl.core.math.FXGLMath;
 import com.almasb.fxgl.entity.Control;
 import com.almasb.fxgl.entity.Entity;
 import com.almasb.fxgl.physics.PhysicsComponent;
+import com.almasb.fxgl.texture.AnimatedTexture;
+import com.almasb.fxgl.texture.AnimationChannel;
+import javafx.util.Duration;
 
 public class PlayerControl extends Control{
+    private boolean isMoving() {            // For readability, laver jeg her en boolean, så det ikke bliver lige så rodet.
+        return FXGLMath.abs(physics.getVelocityX()) > 0;
+    }
 
     private PhysicsComponent physics;
 
-    @Override
-    public void onUpdate(Entity entity, double tpf) {
+    private AnimatedTexture texture;
 
+    private AnimationChannel animIdle, animWalk;
+
+    public PlayerControl(){         // Definerer bevægelserne for spillerens karakter
+        animIdle = new AnimationChannel("player.png",4,32, 42, Duration.seconds(1), 1, 1);
+        animWalk = new AnimationChannel("player.png",4,32, 42, Duration.seconds(1), 0, 3);
+        texture = new AnimatedTexture(animIdle);
     }
+
+    @Override
+    public void onAdded(Entity entity){
+        entity.setView(texture);
+    }
+    @Override
+    public void onUpdate(Entity entity, double tpf) {       // Denne metode gør, at hvis karakteren er i bevægelse, skal den være i bevægelse
+
+        texture.setAnimationChannel(isMoving() ? animWalk : animIdle);
+    }
+
     public void left() {                // Definerer venstre
         physics.setVelocityX(-150);
     }

@@ -42,7 +42,8 @@ public class BasicGameFactory implements EntityFactory{
         return Entities.builder()
                 .from(data)
                 .type(BasicGameType.PLAYER)
-                .viewFromNodeWithBBox(new Rectangle(30, 30, Color.BLUE))    // Definerer "specs" for playermodel
+                .bbox(new HitBox(BoundingShape.box(32,42)))
+                //.viewFromNodeWithBBox(new Rectangle(30, 30, Color.BLUE))    // Definerer "specs" for playermodel
                 .with(physics)
                 .with(new CollidableComponent(true))
                 .with(new PlayerControl())
