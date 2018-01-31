@@ -15,6 +15,22 @@ import javafx.scene.shape.Rectangle;
 @SetEntityFactory
 public class BasicGameFactory implements EntityFactory{
 
+
+
+    @Spawns("enemy")     //Generere hitbox for platform
+    public Entity newEnemy(SpawnData data) {
+        PhysicsComponent physics = new PhysicsComponent();
+        physics.setBodyType(BodyType.DYNAMIC);
+
+        return Entities.builder()
+                .type(BasicGameType.ENEMY)
+                .from(data)
+                .viewFromNodeWithBBox(new Rectangle(30,30,Color.RED))
+                .with(physics)
+                .with(new EnemyControl())
+                .build();
+    }
+
     @Spawns("platform")     //Generere hitbox for platform
     public Entity newPlatform(SpawnData data){
         return Entities.builder()
