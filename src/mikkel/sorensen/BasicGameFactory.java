@@ -3,6 +3,7 @@
 package mikkel.sorensen;
 import com.almasb.fxgl.entity.*;
 import com.almasb.fxgl.entity.component.CollidableComponent;
+import com.almasb.fxgl.entity.component.IrremovableComponent;
 import com.almasb.fxgl.physics.BoundingShape;
 import com.almasb.fxgl.physics.HitBox;
 import com.almasb.fxgl.physics.PhysicsComponent;
@@ -17,7 +18,7 @@ public class BasicGameFactory implements EntityFactory{
 
 
 
-    @Spawns("enemy")     //Generere hitbox for platform
+    @Spawns("enemy")     // Laver en enemy
     public Entity newEnemy(SpawnData data) {
         PhysicsComponent physics = new PhysicsComponent();
         physics.setBodyType(BodyType.DYNAMIC);
@@ -28,6 +29,19 @@ public class BasicGameFactory implements EntityFactory{
                 .viewFromNodeWithBBox(new Rectangle(30,30,Color.RED))
                 .with(physics)
                 .with(new EnemyControl())
+                .build();
+    }
+    @Spawns("enemy1")     // Laver en enemy
+    public Entity newEnemy1(SpawnData data) {
+        PhysicsComponent physics = new PhysicsComponent();
+        physics.setBodyType(BodyType.DYNAMIC);
+
+        return Entities.builder()
+                .type(BasicGameType.ENEMY)
+                .from(data)
+                .viewFromNodeWithBBox(new Rectangle(40,40,Color.RED))
+                .with(physics)
+                .with(new EnemyControl1())
                 .build();
     }
 
@@ -62,6 +76,7 @@ public class BasicGameFactory implements EntityFactory{
                 //.viewFromNodeWithBBox(new Rectangle(30, 30, Color.BLUE))    // Definerer "specs" for playermodel
                 .with(physics)
                 .with(new CollidableComponent(true))
+                .with(new IrremovableComponent())
                 .with(new PlayerControl())
                 .build();
     }

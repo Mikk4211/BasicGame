@@ -11,14 +11,12 @@ import com.almasb.fxgl.texture.AnimationChannel;
 import javafx.util.Duration;
 
 public class PlayerControl extends Control{
+
     private boolean isMoving() {            // For readability, laver jeg her en boolean, så det ikke bliver lige så rodet.
         return FXGLMath.abs(physics.getVelocityX()) > 0;
     }
-
     private PhysicsComponent physics;
-
     private AnimatedTexture texture;
-
     private AnimationChannel animIdle, animWalk;
 
     public PlayerControl(){         // Definerer bevægelserne for spillerens karakter
@@ -31,20 +29,22 @@ public class PlayerControl extends Control{
     public void onAdded(Entity entity){
         entity.setView(texture);
     }
+
     @Override
-    public void onUpdate(Entity entity, double tpf) {       // Denne metode gør, at hvis karakteren er i bevægelse, skal den være i bevægelse
+    public void onUpdate(Entity entity, double tpf) {       // Denne metode definerer hvilken animation, karakteren skal have
 
         texture.setAnimationChannel(isMoving() ? animWalk : animIdle);
     }
 
     public void left() {                // Definerer venstre
-        physics.setVelocityX(-150);
+        physics.setVelocityX(-125);
+        getEntity().setScaleX(-1);      // Gør at karakteren kigger til venstre
     }
     public void right() {               // Definerer højre
-        physics.setVelocityX(150);
+        physics.setVelocityX(125);
+        getEntity().setScaleX(1);       // Gør at karakteren kigger til højre.
     }
     public void jump() {                // Definerer hop
-        physics.setVelocityY(-400);
+        physics.setVelocityY(-300);
     }
-
 }

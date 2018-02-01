@@ -46,7 +46,14 @@ public class BasicGame extends GameApplication{
     protected void initGame() {
         getGameWorld().setLevelFromMap("BasicGame.json");   // Mappet fra Tiled
 
-        player = getGameWorld().spawn("player", 50, 50); // Player model
+        player = getGameWorld().spawn("player", 50, 50); // Player spawn
+
+        getGameScene().getViewport().setBounds(-1500, 0, 1500, getHeight());          // Definerer grænser for banen. Du kan ikke se under banen.
+        getGameScene().getViewport().bindToEntity(player, getWidth() / 2, getHeight() / 2); // "Kamera" der låser til karakteren
+
+        getGameWorld().spawn("enemy", 470, 50);
+        getGameWorld().spawn("enemy1", 670, 50);
+
     }
 
     @Override
@@ -58,8 +65,10 @@ public class BasicGame extends GameApplication{
             }
         });
             getPhysicsWorld().addCollisionHandler(new CollisionHandler(BasicGameType.PLAYER, BasicGameType.DOOR) {
+
                 @Override       // Collisionhandler, der gør at der er collision mellem player og objekt
                 protected void onCollisionBegin(Entity player, Entity door){
+                    getGameWorld().setLevelFromMap("BasicGame2.json");
                     getDisplay().showMessageBox("Level Complete!", () -> {
                         System.out.println("Dialog Closed!");   // Når playeren går ind i døren, får du dialog om at du har klaret banen
                     });
