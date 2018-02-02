@@ -5,12 +5,16 @@ import com.almasb.fxgl.input.UserAction;
 import com.almasb.fxgl.physics.CollisionHandler;
 import com.almasb.fxgl.settings.GameSettings;
 import javafx.scene.input.KeyCode;
+import javafx.scene.text.Text;
+
+import java.util.Map;
 
 //@Author Mikk4211 https://github.com/Mikk4211
 //EASJ Datamatiker 2. semester, Basic Game Project
 
 public class BasicGame extends GameApplication{
-    @Override                   // Dette sætter størrelsen på vinduet, spillet kører i.
+    /* Dette sætter størrelsen på vinduet, spillet kører i. */
+    @Override
     protected void initSettings(GameSettings gameSettings) {
         gameSettings.setWidth(15*70);
         gameSettings.setHeight(10*70);
@@ -19,7 +23,7 @@ public class BasicGame extends GameApplication{
     private Entity player;              // Player variabel
 
     @Override
-    protected void initInput() {                    // Gør at man kan gå til venstre
+    protected void initInput() {                    /* Gør at man kan gå til venstre */
         getInput().addAction(new UserAction("Left") {
             @Override
             protected void onAction() {
@@ -27,14 +31,16 @@ public class BasicGame extends GameApplication{
             }
         }, KeyCode.A);
 
-        getInput().addAction(new UserAction("Right") {  // Gør at man kan gå til højre
+        /* Gør at man kan gå til højre */
+        getInput().addAction(new UserAction("Right") {
             @Override
             protected void onAction() {
                 player.getControl(PlayerControl.class).right();
             }
         }, KeyCode.D);
 
-        getInput().addAction(new UserAction("Jump") {   // Gør at man kan hoppe
+        /* Gør at man kan hoppe */
+        getInput().addAction(new UserAction("Jump") {
             @Override
             protected void onAction() {
                 player.getControl(PlayerControl.class).jump();
@@ -56,12 +62,15 @@ public class BasicGame extends GameApplication{
 
     }
 
+    /* Collision handler, der gør at der er collision mellem player og objekt */
     @Override
     protected void initPhysics() {
         getPhysicsWorld().addCollisionHandler(new CollisionHandler(BasicGameType.PLAYER, BasicGameType.COIN) {
-            @Override       // Collision handler, der gør at der er collision mellem player og objekt
+            @Override
             protected void onCollisionBegin(Entity player, Entity coin){
                 coin.removeFromWorld();
+                System.out.println("You have gathered a coin!");                    // Printer i konsol at der er samlet en coin
+                getGameState().increment("Coins Gathered",+1);    //adder en coin til UI tæller.
             }
         });
             getPhysicsWorld().addCollisionHandler(new CollisionHandler(BasicGameType.PLAYER, BasicGameType.DOOR) {
@@ -69,11 +78,29 @@ public class BasicGame extends GameApplication{
                 @Override       // Collisionhandler, der gør at der er collision mellem player og objekt
                 protected void onCollisionBegin(Entity player, Entity door){
                     getGameWorld().setLevelFromMap("BasicGame2.json");
+                    player = getGameWorld().spawn("player",50, 50);
                     getDisplay().showMessageBox("Level Complete!", () -> {
                         System.out.println("Dialog Closed!");   // Når playeren går ind i døren, får du dialog om at du har klaret banen
                     });
                 }
             });
+    }
+
+    @Override
+    protected void initUI() {
+        Text textPixels = new Text();
+        textPixels.setTranslateX(15);//UI på 10X
+        textPixels.setTranslateY(15);//UI på 10Y
+
+        getGameScene().addUINode(textPixels); //tilføjer UI til scenen/spillet.
+        textPixels.setText("Coins Gathered: ");
+        textPixels.textProperty().bind(getGameState().intProperty("Coins Gathered").asString()); //
+
+    }
+    @Override
+    protected void initGameVars(Map<String, Object> vars) {
+        vars.put("text","Coins Gathered ");
+        vars.put("Coins Gathered", 0);
     }
     public static void main(String[] args) {
     launch(args);
