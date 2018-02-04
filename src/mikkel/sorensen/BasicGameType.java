@@ -3,6 +3,6 @@
 package mikkel.sorensen;
 
 public enum BasicGameType {
-    PLAYER, COIN, PLATFORM, DOOR, ENEMY         // ENUM for hvilke typer objekter der er i spillet
+    PLAYER, COIN, PLATFORM, DOOR, ENEMY, SPAWN, DOOR1         // ENUM for hvilke typer objekter der er i spillet
 
 }

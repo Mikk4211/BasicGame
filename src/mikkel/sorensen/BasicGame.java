@@ -5,10 +5,8 @@ import com.almasb.fxgl.input.UserAction;
 import com.almasb.fxgl.physics.CollisionHandler;
 import com.almasb.fxgl.physics.PhysicsControl;
 import com.almasb.fxgl.settings.GameSettings;
-import javafx.geometry.Point2D;
 import javafx.scene.input.KeyCode;
 import javafx.scene.text.Text;
-
 import java.util.Map;
 
 //@Author Mikk4211 https://github.com/Mikk4211
@@ -23,8 +21,6 @@ public class BasicGame extends GameApplication{
     }
 
     private Entity player;              // Player variabel
-    private Entity spawn;
-
     @Override
     protected void initInput() {                    /* Gør at man kan gå til venstre */
         getInput().addAction(new UserAction("Left") {
@@ -76,14 +72,27 @@ public class BasicGame extends GameApplication{
                 getGameState().increment("Coins Gathered",+1);    //adder en coin til UI tæller.
             }
         });
+
+                /* Collisionhandler, der gør at der er collision mellem player og objekt */
+
             getPhysicsWorld().addCollisionHandler(new CollisionHandler(BasicGameType.PLAYER, BasicGameType.DOOR) {
                 Entity spawn = new Entity();                        // Laver et spawn entity
-                @Override       // Collisionhandler, der gør at der er collision mellem player og objekt
+                @Override
                 protected void onCollisionBegin(Entity player, Entity door){
-                    getDisplay().showMessageBox("Level Complete!", () -> {          // Giver dig en messagebox, der siger at du har klaret levellet. 
+                    getDisplay().showMessageBox("Level Complete!", () -> {          // Giver dig en messagebox, der siger at du har klaret levellet.
                         getGameWorld().setLevelFromMap("BasicGame2.json");          // Sætter nyt map
                         player.getControl(PhysicsControl.class).reposition(spawn.getPosition());    //Definerer hvor man spawner efter at have gået igennem en dør
-                        System.out.println("Dialog Closed!");   // Når playeren går ind i døren, får du dialog om at du har klaret banen
+                    });
+                }
+            });
+
+            getPhysicsWorld().addCollisionHandler(new CollisionHandler(BasicGameType.PLAYER, BasicGameType.DOOR1) {
+                Entity spawn = new Entity();
+                @Override
+                protected void onCollisionBegin(Entity player, Entity door1){
+                    getDisplay().showMessageBox("Level Complete!", () ->{
+                        getGameWorld().setLevelFromMap("BasicGame3.json");
+                        player.getControl(PhysicsControl.class).reposition(spawn.getPosition());
                     });
                 }
             });
@@ -98,7 +107,6 @@ public class BasicGame extends GameApplication{
         getGameScene().addUINode(textPixels); //tilføjer UI til scenen/spillet.
         textPixels.setText("Coins Gathered: ");
         textPixels.textProperty().bind(getGameState().intProperty("Coins Gathered").asString()); //
-
     }
     @Override
     protected void initGameVars(Map<String, Object> vars) {

@@ -53,9 +53,28 @@ public class BasicGameFactory implements EntityFactory{
                 .bbox(new HitBox(BoundingShape.box(data.<Integer>get("width"), data.<Integer>get("height"))))
                 .with(new PhysicsComponent())
                 .build();
-    }
-    @Spawns("door")     //Generere hitbox for platform
+    }@Spawns("door")     //Generere hitbox for platform
     public Entity newDoor(SpawnData data) {
+        return Entities.builder()
+                .type(BasicGameType.DOOR)
+                .from(data)
+                .bbox(new HitBox(BoundingShape.box(data.<Integer>get("width"), data.<Integer>get("height"))))
+                .with(new CollidableComponent(true))
+                .build();
+    }
+    @Spawns("door1")     //Generere hitbox for platform
+    public Entity newDoor1(SpawnData data) {
+        return Entities.builder()
+                .type(BasicGameType.DOOR)
+                .from(data)
+                .bbox(new HitBox(BoundingShape.box(data.<Integer>get("width"), data.<Integer>get("height"))))
+                .with(new CollidableComponent(true))
+                .build();
+    }
+
+
+    @Spawns("door2")     //Generere hitbox for platform
+    public Entity newDoor2(SpawnData data) {
         return Entities.builder()
                 .type(BasicGameType.DOOR)
                 .from(data)
@@ -66,14 +85,15 @@ public class BasicGameFactory implements EntityFactory{
     @Spawns("player")     //Generere spillerens karakter
     public Entity newPlayer(SpawnData data) {
 
+        Entity entity = new Entity();
         PhysicsComponent physics = new PhysicsComponent();
         physics.setBodyType(BodyType.DYNAMIC);
+        entity.addComponent(physics);
 
         return Entities.builder()
                 .from(data)
                 .type(BasicGameType.PLAYER)
                 .bbox(new HitBox(BoundingShape.box(32,42)))
-                //.viewFromNodeWithBBox(new Rectangle(30, 30, Color.BLUE))    // Definerer "specs" for playermodel
                 .with(physics)
                 .with(new CollidableComponent(true))
                 .with(new IrremovableComponent())
@@ -90,4 +110,13 @@ public class BasicGameFactory implements EntityFactory{
                 .build();
 
     }
+    @Spawns("spawn")
+    public Entity newSpawn(SpawnData data) {
+        return Entities.builder()
+                .from(data)
+                .type(BasicGameType.SPAWN)
+                .build();
+    }
+
+
 }
