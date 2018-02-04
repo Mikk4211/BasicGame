@@ -65,7 +65,7 @@ public class BasicGameFactory implements EntityFactory{
     @Spawns("door1")     //Generere hitbox for platform
     public Entity newDoor1(SpawnData data) {
         return Entities.builder()
-                .type(BasicGameType.DOOR)
+                .type(BasicGameType.DOOR1)
                 .from(data)
                 .bbox(new HitBox(BoundingShape.box(data.<Integer>get("width"), data.<Integer>get("height"))))
                 .with(new CollidableComponent(true))
@@ -76,7 +76,7 @@ public class BasicGameFactory implements EntityFactory{
     @Spawns("door2")     //Generere hitbox for platform
     public Entity newDoor2(SpawnData data) {
         return Entities.builder()
-                .type(BasicGameType.DOOR)
+                .type(BasicGameType.DOOR2)
                 .from(data)
                 .bbox(new HitBox(BoundingShape.box(data.<Integer>get("width"), data.<Integer>get("height"))))
                 .with(new CollidableComponent(true))
