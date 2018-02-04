@@ -3,7 +3,9 @@ import com.almasb.fxgl.app.GameApplication;
 import com.almasb.fxgl.entity.Entity;
 import com.almasb.fxgl.input.UserAction;
 import com.almasb.fxgl.physics.CollisionHandler;
+import com.almasb.fxgl.physics.PhysicsControl;
 import com.almasb.fxgl.settings.GameSettings;
+import javafx.geometry.Point2D;
 import javafx.scene.input.KeyCode;
 import javafx.scene.text.Text;
 
@@ -21,6 +23,7 @@ public class BasicGame extends GameApplication{
     }
 
     private Entity player;              // Player variabel
+    private Entity spawn;
 
     @Override
     protected void initInput() {                    /* Gør at man kan gå til venstre */
@@ -52,7 +55,7 @@ public class BasicGame extends GameApplication{
     protected void initGame() {
         getGameWorld().setLevelFromMap("BasicGame.json");   // Mappet fra Tiled
 
-        player = getGameWorld().spawn("player", 50, 50); // Player spawn
+        player = getGameWorld().spawn("player", 10, 10); // Player spawn
 
         getGameScene().getViewport().setBounds(-1500, 0, 1500, getHeight());          // Definerer grænser for banen. Du kan ikke se under banen.
         getGameScene().getViewport().bindToEntity(player, getWidth() / 2, getHeight() / 2); // "Kamera" der låser til karakteren
@@ -74,12 +77,12 @@ public class BasicGame extends GameApplication{
             }
         });
             getPhysicsWorld().addCollisionHandler(new CollisionHandler(BasicGameType.PLAYER, BasicGameType.DOOR) {
-
+                Entity spawn = new Entity();                        // Laver et spawn entity
                 @Override       // Collisionhandler, der gør at der er collision mellem player og objekt
                 protected void onCollisionBegin(Entity player, Entity door){
-                    getGameWorld().setLevelFromMap("BasicGame2.json");
-                    player = getGameWorld().spawn("player",50, 50);
-                    getDisplay().showMessageBox("Level Complete!", () -> {
+                    getDisplay().showMessageBox("Level Complete!", () -> {          // Giver dig en messagebox, der siger at du har klaret levellet. 
+                        getGameWorld().setLevelFromMap("BasicGame2.json");          // Sætter nyt map
+                        player.getControl(PhysicsControl.class).reposition(spawn.getPosition());    //Definerer hvor man spawner efter at have gået igennem en dør
                         System.out.println("Dialog Closed!");   // Når playeren går ind i døren, får du dialog om at du har klaret banen
                     });
                 }
