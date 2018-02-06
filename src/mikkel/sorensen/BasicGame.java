@@ -56,8 +56,8 @@ public class BasicGame extends GameApplication{
         getGameScene().getViewport().setBounds(-1500, 0, 1500, getHeight());          // Definerer grænser for banen. Du kan ikke se under banen.
         getGameScene().getViewport().bindToEntity(player, getWidth() / 2, getHeight() / 2); // "Kamera" der låser til karakteren
 
-        getGameWorld().spawn("enemy", 470, 50);
-        getGameWorld().spawn("enemy1", 670, 50);
+        Entity enemy = getGameWorld().spawn("enemy", 470, 50);
+        Entity enemy2 = getGameWorld().spawn("enemy1", 670, 50);
 
     }
 
@@ -73,6 +73,19 @@ public class BasicGame extends GameApplication{
             }
         });
 
+        getPhysicsWorld().addCollisionHandler(new CollisionHandler(BasicGameType.PLAYER, BasicGameType.ENEMY) {
+            Entity spawn = new Entity();
+            @Override
+            protected void onCollisionBegin(Entity player, Entity enemy){
+                getDisplay().showMessageBox("You have died!", () -> {
+                    getGameWorld().setLevelFromMap("BasicGame.json");
+                    player.getControl(PhysicsControl.class).reposition(spawn.getPosition());
+                    System.out.println("You hit an enemy, and have died!");
+                });
+            }
+        });
+
+
                 /* Collisionhandler, der gør at der er collision mellem player og objekt */
 
             getPhysicsWorld().addCollisionHandler(new CollisionHandler(BasicGameType.PLAYER, BasicGameType.DOOR) {
@@ -81,7 +94,8 @@ public class BasicGame extends GameApplication{
                 protected void onCollisionBegin(Entity player, Entity door){
                     getDisplay().showMessageBox("Level Complete!", () -> {          // Giver dig en messagebox, der siger at du har klaret levellet.
                         getGameWorld().setLevelFromMap("BasicGame2.json");          // Sætter nyt map
-                        player.getControl(PhysicsControl.class).reposition(spawn.getPosition());    //Definerer hvor man spawner efter at have gået igennem en dør
+                        player.getControl(PhysicsControl.class).reposition(spawn.getPosition()); //Definerer hvor man spawner efter at have gået igennem en dør
+                        getGameWorld().spawn("enemy", 470, 50);
                     });
                 }
             });
@@ -96,6 +110,16 @@ public class BasicGame extends GameApplication{
                     });
                 }
             });
+        getPhysicsWorld().addCollisionHandler(new CollisionHandler(BasicGameType.PLAYER, BasicGameType.DOOR2) {
+            Entity spawn = new Entity();
+            @Override
+            protected void onCollisionBegin(Entity player, Entity door3){
+                getDisplay().showMessageBox("Level Complete!", () ->{
+                    getGameWorld().setLevelFromMap("BasicGame4.json");
+                    player.getControl(PhysicsControl.class).reposition(spawn.getPosition());
+                });
+            }
+        });
     }
 
     @Override
