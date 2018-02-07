@@ -47,6 +47,8 @@ public class BasicGame extends GameApplication{
         }, KeyCode.W);
     }
 
+
+
     @Override
     protected void initGame() {
         getGameWorld().setLevelFromMap("BasicGame.json");   // Mappet fra Tiled
@@ -55,15 +57,27 @@ public class BasicGame extends GameApplication{
 
         getGameScene().getViewport().setBounds(-1500, 0, 1500, getHeight());          // Definerer grænser for banen. Du kan ikke se under banen.
         getGameScene().getViewport().bindToEntity(player, getWidth() / 2, getHeight() / 2); // "Kamera" der låser til karakteren
-
         Entity enemy = getGameWorld().spawn("enemy", 470, 50);
-        Entity enemy2 = getGameWorld().spawn("enemy1", 670, 50);
+        Entity enemy1 = getGameWorld().spawn("enemy1", 670, 50);
+
 
     }
 
     /* Collision handler, der gør at der er collision mellem player og objekt */
     @Override
     protected void initPhysics() {
+        getPhysicsWorld().addCollisionHandler(new CollisionHandler(BasicGameType.PLAYER, BasicGameType.ENEMY1) {
+            Entity spawn = new Entity();
+            @Override
+            protected void onCollisionBegin(Entity player, Entity enemy1){
+                getDisplay().showMessageBox("You have died!", () -> {
+                    player.getControl(PhysicsControl.class).reposition(spawn.getPosition());
+                    System.out.println("You hit an enemy, and have died!");
+                });
+            }
+        });
+
+
         getPhysicsWorld().addCollisionHandler(new CollisionHandler(BasicGameType.PLAYER, BasicGameType.COIN) {
             @Override
             protected void onCollisionBegin(Entity player, Entity coin){
@@ -73,21 +87,11 @@ public class BasicGame extends GameApplication{
             }
         });
 
-        getPhysicsWorld().addCollisionHandler(new CollisionHandler(BasicGameType.PLAYER, BasicGameType.ENEMY) {
-            Entity spawn = new Entity();
-            @Override
-            protected void onCollisionBegin(Entity player, Entity enemy){
-                getDisplay().showMessageBox("You have died!", () -> {
-                    getGameWorld().setLevelFromMap("BasicGame.json");
-                    player.getControl(PhysicsControl.class).reposition(spawn.getPosition());
-                    System.out.println("You hit an enemy, and have died!");
-                });
-            }
-        });
+
 
 
                 /* Collisionhandler, der gør at der er collision mellem player og objekt */
-
+            /* level 1 - 2 */
             getPhysicsWorld().addCollisionHandler(new CollisionHandler(BasicGameType.PLAYER, BasicGameType.DOOR) {
                 Entity spawn = new Entity();                        // Laver et spawn entity
                 @Override
@@ -100,6 +104,7 @@ public class BasicGame extends GameApplication{
                 }
             });
 
+            /* level 2 - 3 */
             getPhysicsWorld().addCollisionHandler(new CollisionHandler(BasicGameType.PLAYER, BasicGameType.DOOR1) {
                 Entity spawn = new Entity();
                 @Override
@@ -110,16 +115,41 @@ public class BasicGame extends GameApplication{
                     });
                 }
             });
+
+            /* level 3 - 4 */
         getPhysicsWorld().addCollisionHandler(new CollisionHandler(BasicGameType.PLAYER, BasicGameType.DOOR2) {
             Entity spawn = new Entity();
             @Override
-            protected void onCollisionBegin(Entity player, Entity door3){
+            protected void onCollisionBegin(Entity player, Entity door2){
                 getDisplay().showMessageBox("Level Complete!", () ->{
                     getGameWorld().setLevelFromMap("BasicGame4.json");
                     player.getControl(PhysicsControl.class).reposition(spawn.getPosition());
                 });
             }
         });
+        /* level 4 - 5 */
+        getPhysicsWorld().addCollisionHandler(new CollisionHandler(BasicGameType.PLAYER, BasicGameType.DOOR3) {
+            Entity spawn = new Entity();
+            @Override
+            protected void onCollisionBegin(Entity player, Entity door3){
+                getDisplay().showMessageBox("Level Complete!", () ->{
+                    getGameWorld().setLevelFromMap("BasicGame5.json");
+                    player.getControl(PhysicsControl.class).reposition(spawn.getPosition());
+                });
+            }
+        });
+
+        /* level 5 - 6 */
+        /*getPhysicsWorld().addCollisionHandler(new CollisionHandler(BasicGameType.PLAYER, BasicGameType.DOOR4) {
+            Entity spawn = new Entity();
+            @Override
+            protected void onCollisionBegin(Entity player, Entity door4){
+                getDisplay().showMessageBox("Level Complete!", () ->{
+                    getGameWorld().setLevelFromMap("BasicGame5.json");
+                    player.getControl(PhysicsControl.class).reposition(spawn.getPosition());
+                });
+            }
+        }); */
     }
 
     @Override

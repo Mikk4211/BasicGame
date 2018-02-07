@@ -19,7 +19,7 @@ public class BasicGameFactory implements EntityFactory{
 
 
     @Spawns("enemy")     // Laver en enemy
-    public Entity newEnemy(SpawnData data) {
+    public Entity enemy(SpawnData data) {
         PhysicsComponent physics = new PhysicsComponent();
         physics.setBodyType(BodyType.DYNAMIC);
 
@@ -32,7 +32,7 @@ public class BasicGameFactory implements EntityFactory{
                 .build();
     }
     @Spawns("enemy1")     // Laver en enemy
-    public Entity newEnemy1(SpawnData data) {
+    public Entity enemy1(SpawnData data) {
         PhysicsComponent physics = new PhysicsComponent();
         physics.setBodyType(BodyType.DYNAMIC);
 
@@ -53,7 +53,7 @@ public class BasicGameFactory implements EntityFactory{
                 .bbox(new HitBox(BoundingShape.box(data.<Integer>get("width"), data.<Integer>get("height"))))
                 .with(new PhysicsComponent())
                 .build();
-    }@Spawns("door")     //Generere hitbox for platform
+    }@Spawns("door")     // Dør der går til et nyt level
     public Entity newDoor(SpawnData data) {
         return Entities.builder()
                 .type(BasicGameType.DOOR)
@@ -62,7 +62,7 @@ public class BasicGameFactory implements EntityFactory{
                 .with(new CollidableComponent(true))
                 .build();
     }
-    @Spawns("door1")     //Generere hitbox for platform
+    @Spawns("door1")     // Dør 1
     public Entity newDoor1(SpawnData data) {
         return Entities.builder()
                 .type(BasicGameType.DOOR1)
@@ -71,9 +71,7 @@ public class BasicGameFactory implements EntityFactory{
                 .with(new CollidableComponent(true))
                 .build();
     }
-
-
-    @Spawns("door2")     //Generere hitbox for platform
+    @Spawns("door2")     // Dør 2
     public Entity newDoor2(SpawnData data) {
         return Entities.builder()
                 .type(BasicGameType.DOOR2)
@@ -82,6 +80,26 @@ public class BasicGameFactory implements EntityFactory{
                 .with(new CollidableComponent(true))
                 .build();
     }
+    @Spawns("door3")     // Dør 3
+    public Entity newDoor3(SpawnData data) {
+        return Entities.builder()
+                .type(BasicGameType.DOOR3)
+                .from(data)
+                .bbox(new HitBox(BoundingShape.box(data.<Integer>get("width"), data.<Integer>get("height"))))
+                .with(new CollidableComponent(true))
+                .build();
+    }
+    @Spawns("door4")     // Dør 4
+    public Entity newDoor4(SpawnData data) {
+        return Entities.builder()
+                .type(BasicGameType.DOOR4)
+                .from(data)
+                .bbox(new HitBox(BoundingShape.box(data.<Integer>get("width"), data.<Integer>get("height"))))
+                .with(new CollidableComponent(true))
+                .build();
+    }
+
+
     @Spawns("player")     //Generere spillerens karakter
     public Entity newPlayer(SpawnData data) {
 
