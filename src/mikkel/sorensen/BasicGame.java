@@ -9,8 +9,8 @@ import javafx.scene.input.KeyCode;
 import javafx.scene.text.Text;
 import java.util.Map;
 
-//@Author Mikk4211 https://github.com/Mikk4211
-//EASJ Datamatiker 2. semester, Basic Game Project
+/* @Author Mikk4211 https://github.com/Mikk4211 */
+/* EASJ Datamatiker 2. semester, Basic Game Project */
 
 public class BasicGame extends GameApplication{
     /* Dette sætter størrelsen på vinduet, spillet kører i. */
@@ -18,11 +18,14 @@ public class BasicGame extends GameApplication{
     protected void initSettings(GameSettings gameSettings) {
         gameSettings.setWidth(15*70);
         gameSettings.setHeight(10*70);
+        gameSettings.setTitle("Basic Game ");
     }
 
     private Entity player;              // Player variabel
+
     @Override
-    protected void initInput() {                    /* Gør at man kan gå til venstre */
+    protected void initInput() {
+        /* Gør at man kan gå til venstre */
         getInput().addAction(new UserAction("Left") {
             @Override
             protected void onAction() {
@@ -45,32 +48,39 @@ public class BasicGame extends GameApplication{
                 player.getControl(PlayerControl.class).jump();
             }
         }, KeyCode.W);
+        /* Gør at man kan stoppe karakteren på stedet */
+        getInput().addAction(new UserAction("Stop") {
+            @Override
+            protected void onAction() {
+                player.getControl(PlayerControl.class).stop();
+            }
+        }, KeyCode.S);
     }
 
 
 
     @Override
     protected void initGame() {
-        getGameWorld().setLevelFromMap("BasicGame.json");   // Mappet fra Tiled
+        getGameWorld().setLevelFromMap("BasicGame.json");   // Starter spillet på level 1.
 
         player = getGameWorld().spawn("player", 10, 10); // Player spawn
 
         getGameScene().getViewport().setBounds(-1500, 0, 1500, getHeight());          // Definerer grænser for banen. Du kan ikke se under banen.
         getGameScene().getViewport().bindToEntity(player, getWidth() / 2, getHeight() / 2); // "Kamera" der låser til karakteren
-        Entity enemy = getGameWorld().spawn("enemy", 470, 50);
-        Entity enemy1 = getGameWorld().spawn("enemy1", 670, 50);
-
+        getGameWorld().spawn("enemy", 470, 50);
+        getGameWorld().spawn("enemy1", 670, 50);
 
     }
 
     /* Collision handler, der gør at der er collision mellem player og objekt */
     @Override
     protected void initPhysics() {
-        getPhysicsWorld().addCollisionHandler(new CollisionHandler(BasicGameType.PLAYER, BasicGameType.ENEMY1) {
+        getPhysicsWorld().addCollisionHandler(new CollisionHandler(BasicGameType.PLAYER, BasicGameType.ENEMY) {
             Entity spawn = new Entity();
             @Override
-            protected void onCollisionBegin(Entity player, Entity enemy1){
+            protected void onCollisionBegin(Entity player, Entity enemy){
                 getDisplay().showMessageBox("You have died!", () -> {
+                    player.removeFromWorld();
                     player.getControl(PhysicsControl.class).reposition(spawn.getPosition());
                     System.out.println("You hit an enemy, and have died!");
                 });
@@ -96,10 +106,11 @@ public class BasicGame extends GameApplication{
                 Entity spawn = new Entity();                        // Laver et spawn entity
                 @Override
                 protected void onCollisionBegin(Entity player, Entity door){
-                    getDisplay().showMessageBox("Level Complete!", () -> {          // Giver dig en messagebox, der siger at du har klaret levellet.
+                    getDisplay().showMessageBox("Level 1 Complete!", () -> {          // Giver dig en messagebox, der siger at du har klaret levellet.
                         getGameWorld().setLevelFromMap("BasicGame2.json");          // Sætter nyt map
                         player.getControl(PhysicsControl.class).reposition(spawn.getPosition()); //Definerer hvor man spawner efter at have gået igennem en dør
-                        getGameWorld().spawn("enemy", 470, 50);
+                        getGameWorld().spawn("enemy", 320, 50);
+                        getGameWorld().spawn("enemy", 550, 50);
                     });
                 }
             });
@@ -109,9 +120,12 @@ public class BasicGame extends GameApplication{
                 Entity spawn = new Entity();
                 @Override
                 protected void onCollisionBegin(Entity player, Entity door1){
-                    getDisplay().showMessageBox("Level Complete!", () ->{
+                    getDisplay().showMessageBox("Level 2 Complete!", () ->{
                         getGameWorld().setLevelFromMap("BasicGame3.json");
                         player.getControl(PhysicsControl.class).reposition(spawn.getPosition());
+                        getGameWorld().spawn("enemy", 300, 50);
+                        getGameWorld().spawn("enemy", 400, 50);
+
                     });
                 }
             });
@@ -121,9 +135,12 @@ public class BasicGame extends GameApplication{
             Entity spawn = new Entity();
             @Override
             protected void onCollisionBegin(Entity player, Entity door2){
-                getDisplay().showMessageBox("Level Complete!", () ->{
+                getDisplay().showMessageBox("Level 3 Complete!", () ->{
                     getGameWorld().setLevelFromMap("BasicGame4.json");
                     player.getControl(PhysicsControl.class).reposition(spawn.getPosition());
+                    getGameWorld().spawn("enemy", 570, 50);
+                    getGameWorld().spawn("enemy", 100, 50);
+                    getGameWorld().spawn("enemy", 700, 50);
                 });
             }
         });
@@ -132,9 +149,12 @@ public class BasicGame extends GameApplication{
             Entity spawn = new Entity();
             @Override
             protected void onCollisionBegin(Entity player, Entity door3){
-                getDisplay().showMessageBox("Level Complete!", () ->{
+                getDisplay().showMessageBox("Level 4 Complete!", () ->{
                     getGameWorld().setLevelFromMap("BasicGame5.json");
                     player.getControl(PhysicsControl.class).reposition(spawn.getPosition());
+                    getGameWorld().spawn("enemy", 600, 50);
+                    getGameWorld().spawn("enemy", 100, 50);
+                    getGameWorld().spawn("enemy", 820, 50);
                 });
             }
         });

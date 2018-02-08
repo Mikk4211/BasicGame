@@ -54,10 +54,15 @@ public class PlayerControl extends Control {
     }
 
     public void jump() {                // Definerer hop
-                physics.setVelocityY(-300);
+
+        if (physics.getVelocityY() == 0) {
+            physics.setVelocityY(-400);
 
         }
     }
-
+    public void stop() {                // Gør at karakteren kan lave et full stop
+        physics.setVelocityX(0);
+    }
+}
 
 
