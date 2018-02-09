@@ -26,7 +26,7 @@ public class BasicGameFactory implements EntityFactory{
         return Entities.builder()
                 .type(BasicGameType.ENEMY)
                 .from(data)
-                .viewFromNodeWithBBox(new Rectangle(30,30,Color.RED))
+                .bbox(new HitBox(BoundingShape.box(17,25)))
                 .with(physics)
                 .with(new CollidableComponent(true))
                 .with(new EnemyControl())
