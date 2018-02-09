@@ -28,6 +28,7 @@ public class BasicGameFactory implements EntityFactory{
                 .from(data)
                 .viewFromNodeWithBBox(new Rectangle(30,30,Color.RED))
                 .with(physics)
+                .with(new CollidableComponent(true))
                 .with(new EnemyControl())
                 .build();
     }
@@ -40,6 +41,7 @@ public class BasicGameFactory implements EntityFactory{
                 .type(BasicGameType.ENEMY)
                 .from(data)
                 .viewFromNodeWithBBox(new Rectangle(40,40,Color.RED))
+                .with(new CollidableComponent(true))
                 .with(physics)
                 .with(new EnemyControl1())
                 .build();
