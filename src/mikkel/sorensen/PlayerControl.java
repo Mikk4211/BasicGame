@@ -20,15 +20,13 @@ public class PlayerControl extends Control {
 
     private PhysicsComponent physics;
     private AnimatedTexture texture;
-    private AnimationChannel animIdle, animWalk, animJump;
-    private LocalTimer jumpTimer;
+    private AnimationChannel animIdle, animWalk;
 
-    public PlayerControl() {         // Definerer bevægelserne for spillerens karakter
+
+    PlayerControl() {         // Definerer bevægelserne for spillerens karakter
         animIdle = new AnimationChannel("player.png", 4, 32, 42, Duration.seconds(1), 1, 1);
         animWalk = new AnimationChannel("player.png", 4, 32, 42, Duration.seconds(1), 0, 3);
         texture = new AnimatedTexture(animIdle);
-
-        jumpTimer = FXGL.newLocalTimer();
     }
 
     @Override

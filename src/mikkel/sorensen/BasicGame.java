@@ -1,3 +1,6 @@
+/* @Author Mikk4211 https://github.com/Mikk4211 */
+/* EASJ Datamatiker 2. semester, Basic Game Project */
+
 package mikkel.sorensen;
 import com.almasb.fxgl.app.GameApplication;
 import com.almasb.fxgl.entity.Entity;
@@ -9,8 +12,7 @@ import javafx.scene.input.KeyCode;
 import javafx.scene.text.Text;
 import java.util.Map;
 
-/* @Author Mikk4211 https://github.com/Mikk4211 */
-/* EASJ Datamatiker 2. semester, Basic Game Project */
+
 
 public class BasicGame extends GameApplication{
     /* Dette sætter størrelsen på vinduet, spillet kører i. */
@@ -21,8 +23,8 @@ public class BasicGame extends GameApplication{
         gameSettings.setTitle("Basic Game ");
     }
 
-    private Entity player;              // Player variabel
-
+    private Entity player;// Player variabel
+    private Entity spawn;
     @Override
     protected void initInput() {
         /* Gør at man kan gå til venstre */
@@ -55,6 +57,14 @@ public class BasicGame extends GameApplication{
                 player.getControl(PlayerControl.class).stop();
             }
         }, KeyCode.S);
+         /* Gør at man kan respawne on-demand, hvis man f.eks. ender ude for mappet. */
+        getInput().addAction(new UserAction("Respawn") {
+            Entity spawn = new Entity();
+            @Override
+            protected void onAction() {
+                player.getControl(PhysicsControl.class).reposition(spawn.getPosition());
+            }
+        }, KeyCode.R);
     }
 
 
@@ -72,6 +82,7 @@ public class BasicGame extends GameApplication{
 
     }
 
+
     /* Collision handler, der gør at der er collision mellem player og objekt */
     @Override
     protected void initPhysics() {
@@ -80,7 +91,6 @@ public class BasicGame extends GameApplication{
             @Override
             protected void onCollisionBegin(Entity player, Entity enemy){
                 getDisplay().showMessageBox("You have died!", () -> {
-                    player.removeFromWorld();
                     player.getControl(PhysicsControl.class).reposition(spawn.getPosition());
                     System.out.println("You hit an enemy, and have died!");
                 });

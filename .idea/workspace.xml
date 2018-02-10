@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5c7c8117-c6d8-4211-8169-56e775e7e1fe" name="Default" comment="">
+    <list default="true" id="5c7c8117-c6d8-4211-8169-56e775e7e1fe" name="Default" comment="Tilføjet respawn knap så man kan respawne ved at klikke R">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BasicGame/src/Assets/textures/matt.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BasicGame/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../BasicGame/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BasicGame/src/Assets/json/BasicGame2.json" afterPath="$PROJECT_DIR$/../BasicGame/src/Assets/json/BasicGame2.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/BasicGame.java" afterPath="$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/BasicGame.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/BasicGameType.java" afterPath="$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/BasicGameType.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/EnemyControl.java" afterPath="$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/EnemyControl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/EnemyControl1.java" afterPath="$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/EnemyControl1.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/PlayerControl.java" afterPath="$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/PlayerControl.java" />
     </list>
     <ignored path="$PROJECT_DIR$/../BasicGame/out/" />
@@ -18,34 +19,53 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="BasicGame.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BasicGame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/BasicGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="154" column="52" lean-forward="false" selection-start-line="154" selection-start-column="52" selection-end-line="154" selection-end-column="52" />
+            <state relative-caret-position="21">
+              <caret line="1" column="54" lean-forward="false" selection-start-line="1" selection-start-column="54" selection-end-line="1" selection-end-column="54" />
               <folding>
+                <element signature="e#0#8593#0" expanded="true" />
                 <element signature="imports" expanded="true" />
-                <element signature="e#1067#1068#0" expanded="true" />
-                <element signature="e#1144#1145#0" expanded="true" />
-                <element signature="e#1327#1328#0" expanded="true" />
-                <element signature="e#1405#1406#0" expanded="true" />
-                <element signature="e#1580#1581#0" expanded="true" />
-                <element signature="e#1657#1658#0" expanded="true" />
-                <element signature="e#1853#1854#0" expanded="true" />
-                <element signature="e#1930#1931#0" expanded="true" />
-                <element signature="e#8201#8202#0" expanded="true" />
-                <element signature="e#8225#8226#0" expanded="true" />
+                <element signature="e#1080#1081#0" expanded="true" />
+                <element signature="e#1157#1158#0" expanded="true" />
+                <element signature="e#1340#1341#0" expanded="true" />
+                <element signature="e#1418#1419#0" expanded="true" />
+                <element signature="e#1593#1594#0" expanded="true" />
+                <element signature="e#1670#1671#0" expanded="true" />
+                <element signature="e#1866#1867#0" expanded="true" />
+                <element signature="e#1943#1944#0" expanded="true" />
+                <element signature="e#2214#2215#0" expanded="true" />
+                <element signature="e#2317#2318#0" expanded="true" />
+                <element signature="e#8543#8544#0" expanded="true" />
+                <element signature="e#8567#8568#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BasicGame2.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../BasicGame/src/Assets/json/BasicGame2.json">
+      <file leaf-file-name="BasicGameFactory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/BasicGameFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2646">
-              <caret line="126" column="18" lean-forward="false" selection-start-line="126" selection-start-column="18" selection-end-line="126" selection-end-column="18" />
-              <folding />
+            <state relative-caret-position="588">
+              <caret line="28" column="56" lean-forward="false" selection-start-line="28" selection-start-column="56" selection-end-line="28" selection-end-column="56" />
+              <folding>
+                <element signature="e#0#5253#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1919#1928#0" expanded="true" />
+                <element signature="e#1947#1956#0" expanded="true" />
+                <element signature="e#2306#2315#0" expanded="true" />
+                <element signature="e#2334#2343#0" expanded="true" />
+                <element signature="e#2685#2694#0" expanded="true" />
+                <element signature="e#2713#2722#0" expanded="true" />
+                <element signature="e#3064#3073#0" expanded="true" />
+                <element signature="e#3092#3101#0" expanded="true" />
+                <element signature="e#3443#3452#0" expanded="true" />
+                <element signature="e#3471#3480#0" expanded="true" />
+                <element signature="e#3822#3831#0" expanded="true" />
+                <element signature="e#3850#3859#0" expanded="true" />
+                <element signature="e#4875#4884#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -62,41 +82,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BasicGameFactory.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/BasicGameFactory.java">
+      <file leaf-file-name="PlayerControl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/PlayerControl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1445">
-              <caret line="23" column="44" lean-forward="false" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
+            <state relative-caret-position="294">
+              <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
               <folding>
-                <element signature="e#0#5157#0" expanded="true" />
+                <element signature="e#0#2091#0" expanded="true" />
                 <element signature="imports" expanded="true" />
-                <element signature="e#1823#1832#0" expanded="true" />
-                <element signature="e#1851#1860#0" expanded="true" />
-                <element signature="e#2210#2219#0" expanded="true" />
-                <element signature="e#2238#2247#0" expanded="true" />
-                <element signature="e#2589#2598#0" expanded="true" />
-                <element signature="e#2617#2626#0" expanded="true" />
-                <element signature="e#2968#2977#0" expanded="true" />
-                <element signature="e#2996#3005#0" expanded="true" />
-                <element signature="e#3347#3356#0" expanded="true" />
-                <element signature="e#3375#3384#0" expanded="true" />
-                <element signature="e#3726#3735#0" expanded="true" />
-                <element signature="e#3754#3763#0" expanded="true" />
-                <element signature="e#4779#4788#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EnemyControl1.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/EnemyControl1.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="24" column="32" lean-forward="true" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#716#717#0" expanded="true" />
-                <element signature="e#790#791#0" expanded="true" />
+                <element signature="e#523#524#0" expanded="true" />
+                <element signature="e#677#678#0" expanded="true" />
+                <element signature="e#1290#1291#0" expanded="true" />
+                <element signature="e#1439#1440#0" expanded="true" />
+                <element signature="e#1988#1989#0" expanded="true" />
+                <element signature="e#2085#2086#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -105,29 +104,24 @@
       <file leaf-file-name="EnemyControl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/EnemyControl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="67">
-              <caret line="4" column="37" lean-forward="true" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+            <state relative-caret-position="315">
+              <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
               <folding>
-                <element signature="e#719#720#0" expanded="true" />
-                <element signature="e#801#802#0" expanded="true" />
+                <element signature="e#0#1702#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlayerControl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/PlayerControl.java">
+      <file leaf-file-name="EnemyControl1.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/EnemyControl1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1098">
-              <caret line="62" column="82" lean-forward="false" selection-start-line="62" selection-start-column="82" selection-end-line="62" selection-end-column="82" />
+            <state relative-caret-position="21">
+              <caret line="1" column="54" lean-forward="false" selection-start-line="1" selection-start-column="54" selection-end-line="1" selection-end-column="54" />
               <folding>
-                <element signature="e#0#2184#0" expanded="true" />
+                <element signature="e#0#901#0" expanded="true" />
                 <element signature="imports" expanded="true" />
-                <element signature="e#523#524#0" expanded="true" />
-                <element signature="e#677#678#0" expanded="true" />
-                <element signature="e#1383#1384#0" expanded="true" />
-                <element signature="e#1532#1533#0" expanded="true" />
-                <element signature="e#2178#2179#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -163,14 +157,14 @@
         <option value="$PROJECT_DIR$/../BasicGame/src/Mikkel/Sorensen/Assets/json/BasicGame.json" />
         <option value="$PROJECT_DIR$/../BasicGame/src/Mikkel/Sorensen/BasicGame.java" />
         <option value="$PROJECT_DIR$/../BasicGame/src/Mikkel/Sorensen/BasicGameFactory.java" />
-        <option value="$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/EnemyControl.java" />
         <option value="$PROJECT_DIR$/../BasicGame/src/Assets/json/BasicGame.json" />
-        <option value="$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/PlayerControl.java" />
-        <option value="$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/EnemyControl1.java" />
-        <option value="$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/BasicGameFactory.java" />
         <option value="$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/BasicGameType.java" />
         <option value="$PROJECT_DIR$/../BasicGame/src/Assets/json/BasicGame2.json" />
+        <option value="$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/BasicGameFactory.java" />
+        <option value="$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/PlayerControl.java" />
+        <option value="$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/EnemyControl.java" />
         <option value="$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/BasicGame.java" />
+        <option value="$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/EnemyControl1.java" />
       </list>
     </option>
   </component>
@@ -260,8 +254,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\BasicGame\src\Assets\json" />
       <recent name="C:\BasicGame\src\Assets\textures" />
+      <recent name="C:\BasicGame\src\Assets\json" />
       <recent name="C:\BasicGame\src\Mikkel\Sorensen\Assets\json" />
     </key>
   </component>
@@ -382,6 +376,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="5c7c8117-c6d8-4211-8169-56e775e7e1fe" name="Default" comment="" />
@@ -390,7 +387,7 @@
       <option name="presentableId" value="Default" />
       <updated>1517221364765</updated>
       <workItem from="1517221370990" duration="10760000" />
-      <workItem from="1517242436107" duration="52564000" />
+      <workItem from="1517242436107" duration="63447000" />
     </task>
     <task id="LOCAL-00001" summary="Packages">
       <created>1517231460623</created>
@@ -490,11 +487,32 @@
       <option name="project" value="LOCAL" />
       <updated>1517999742761</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Tilføjet en ny funktion - S(Stop), som gør at karakteren stopper på stedet, eller bare falder lige ned hvis i hop.&#10;Tilføjet enemies til hvert level, og givet spillet en titel.">
+      <created>1518092964694</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1518092964694</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Fået fikset collision med enemy, og der er nu trusler rundt om på mappet!&#10;Dette gør at spillet næsten er færdigt.">
+      <created>1518171369342</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1518171369342</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Tilføjet en sjov lille sprite til enemies, så de er nu er min ven Matt...">
+      <created>1518178269577</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1518178269577</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63324000" />
+    <option name="totallyTimeSpent" value="74207000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -510,7 +528,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289183" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289183" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -549,7 +567,11 @@
     <MESSAGE value="Prøvet at lege med map transfer" />
     <MESSAGE value="Map transition er nu flydende." />
     <MESSAGE value="Leget lidt med collision med enemies, virker ikke endnu.&#10;Tilføjet nyt map." />
-    <option name="LAST_COMMIT_MESSAGE" value="Leget lidt med collision med enemies, virker ikke endnu.&#10;Tilføjet nyt map." />
+    <MESSAGE value="Tilføjet en ny funktion - S(Stop), som gør at karakteren stopper på stedet, eller bare falder lige ned hvis i hop.&#10;Tilføjet enemies til hvert level, og givet spillet en titel." />
+    <MESSAGE value="Fået fikset collision med enemy, og der er nu trusler rundt om på mappet!&#10;Dette gør at spillet næsten er færdigt." />
+    <MESSAGE value="Tilføjet en sjov lille sprite til enemies, så de er nu er min ven Matt..." />
+    <MESSAGE value="Tilføjet respawn knap så man kan respawne ved at klikke R" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tilføjet respawn knap så man kan respawne ved at klikke R" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -563,17 +585,20 @@
         <state relative-caret-position="336">
           <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
+            <element signature="e#0#8593#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#1067#1068#0" expanded="true" />
-            <element signature="e#1144#1145#0" expanded="true" />
-            <element signature="e#1327#1328#0" expanded="true" />
-            <element signature="e#1405#1406#0" expanded="true" />
-            <element signature="e#1580#1581#0" expanded="true" />
-            <element signature="e#1657#1658#0" expanded="true" />
-            <element signature="e#1853#1854#0" expanded="true" />
-            <element signature="e#1930#1931#0" expanded="true" />
-            <element signature="e#8201#8202#0" expanded="true" />
-            <element signature="e#8225#8226#0" expanded="true" />
+            <element signature="e#1080#1081#0" expanded="true" />
+            <element signature="e#1157#1158#0" expanded="true" />
+            <element signature="e#1340#1341#0" expanded="true" />
+            <element signature="e#1418#1419#0" expanded="true" />
+            <element signature="e#1593#1594#0" expanded="true" />
+            <element signature="e#1670#1671#0" expanded="true" />
+            <element signature="e#1866#1867#0" expanded="true" />
+            <element signature="e#1943#1944#0" expanded="true" />
+            <element signature="e#2214#2215#0" expanded="true" />
+            <element signature="e#2317#2318#0" expanded="true" />
+            <element signature="e#8543#8544#0" expanded="true" />
+            <element signature="e#8567#8568#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -583,21 +608,21 @@
         <state relative-caret-position="294">
           <caret line="19" column="45" lean-forward="false" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
           <folding>
-            <element signature="e#0#5157#0" expanded="true" />
+            <element signature="e#0#5253#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#1823#1832#0" expanded="true" />
-            <element signature="e#1851#1860#0" expanded="true" />
-            <element signature="e#2210#2219#0" expanded="true" />
-            <element signature="e#2238#2247#0" expanded="true" />
-            <element signature="e#2589#2598#0" expanded="true" />
-            <element signature="e#2617#2626#0" expanded="true" />
-            <element signature="e#2968#2977#0" expanded="true" />
-            <element signature="e#2996#3005#0" expanded="true" />
-            <element signature="e#3347#3356#0" expanded="true" />
-            <element signature="e#3375#3384#0" expanded="true" />
-            <element signature="e#3726#3735#0" expanded="true" />
-            <element signature="e#3754#3763#0" expanded="true" />
-            <element signature="e#4779#4788#0" expanded="true" />
+            <element signature="e#1919#1928#0" expanded="true" />
+            <element signature="e#1947#1956#0" expanded="true" />
+            <element signature="e#2306#2315#0" expanded="true" />
+            <element signature="e#2334#2343#0" expanded="true" />
+            <element signature="e#2685#2694#0" expanded="true" />
+            <element signature="e#2713#2722#0" expanded="true" />
+            <element signature="e#3064#3073#0" expanded="true" />
+            <element signature="e#3092#3101#0" expanded="true" />
+            <element signature="e#3443#3452#0" expanded="true" />
+            <element signature="e#3471#3480#0" expanded="true" />
+            <element signature="e#3822#3831#0" expanded="true" />
+            <element signature="e#3850#3859#0" expanded="true" />
+            <element signature="e#4875#4884#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -606,17 +631,6 @@
     <entry file="file://$PROJECT_DIR$/../BasicGame/src/Assets/textures/RPGpack_sheet_2X.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/EnemyControl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="4" column="37" lean-forward="true" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
-          <folding>
-            <element signature="e#719#720#0" expanded="true" />
-            <element signature="e#801#802#0" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../BasicGame/src/Assets/json/BasicGame.json">
@@ -675,30 +689,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/PlayerControl.java">
+    <entry file="file://$PROJECT_DIR$/../BasicGame/src/Assets/json/BasicGame2.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1098">
-          <caret line="62" column="82" lean-forward="false" selection-start-line="62" selection-start-column="82" selection-end-line="62" selection-end-column="82" />
+        <state relative-caret-position="2646">
+          <caret line="126" column="18" lean-forward="false" selection-start-line="126" selection-start-column="18" selection-end-line="126" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/BasicGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="54" lean-forward="false" selection-start-line="1" selection-start-column="54" selection-end-line="1" selection-end-column="54" />
           <folding>
-            <element signature="e#0#2184#0" expanded="true" />
+            <element signature="e#0#8593#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#523#524#0" expanded="true" />
-            <element signature="e#677#678#0" expanded="true" />
-            <element signature="e#1383#1384#0" expanded="true" />
-            <element signature="e#1532#1533#0" expanded="true" />
-            <element signature="e#2178#2179#0" expanded="true" />
+            <element signature="e#1080#1081#0" expanded="true" />
+            <element signature="e#1157#1158#0" expanded="true" />
+            <element signature="e#1340#1341#0" expanded="true" />
+            <element signature="e#1418#1419#0" expanded="true" />
+            <element signature="e#1593#1594#0" expanded="true" />
+            <element signature="e#1670#1671#0" expanded="true" />
+            <element signature="e#1866#1867#0" expanded="true" />
+            <element signature="e#1943#1944#0" expanded="true" />
+            <element signature="e#2214#2215#0" expanded="true" />
+            <element signature="e#2317#2318#0" expanded="true" />
+            <element signature="e#8543#8544#0" expanded="true" />
+            <element signature="e#8567#8568#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/EnemyControl1.java">
+    <entry file="file://$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/BasicGameFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="24" column="32" lean-forward="true" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+        <state relative-caret-position="588">
+          <caret line="28" column="56" lean-forward="false" selection-start-line="28" selection-start-column="56" selection-end-line="28" selection-end-column="56" />
           <folding>
+            <element signature="e#0#5253#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#716#717#0" expanded="true" />
-            <element signature="e#790#791#0" expanded="true" />
+            <element signature="e#1919#1928#0" expanded="true" />
+            <element signature="e#1947#1956#0" expanded="true" />
+            <element signature="e#2306#2315#0" expanded="true" />
+            <element signature="e#2334#2343#0" expanded="true" />
+            <element signature="e#2685#2694#0" expanded="true" />
+            <element signature="e#2713#2722#0" expanded="true" />
+            <element signature="e#3064#3073#0" expanded="true" />
+            <element signature="e#3092#3101#0" expanded="true" />
+            <element signature="e#3443#3452#0" expanded="true" />
+            <element signature="e#3471#3480#0" expanded="true" />
+            <element signature="e#3822#3831#0" expanded="true" />
+            <element signature="e#3850#3859#0" expanded="true" />
+            <element signature="e#4875#4884#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -713,54 +754,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/BasicGameFactory.java">
+    <entry file="file://$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/EnemyControl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1445">
-          <caret line="23" column="44" lean-forward="false" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
+        <state relative-caret-position="315">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
           <folding>
-            <element signature="e#0#5157#0" expanded="true" />
+            <element signature="e#0#1702#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#1823#1832#0" expanded="true" />
-            <element signature="e#1851#1860#0" expanded="true" />
-            <element signature="e#2210#2219#0" expanded="true" />
-            <element signature="e#2238#2247#0" expanded="true" />
-            <element signature="e#2589#2598#0" expanded="true" />
-            <element signature="e#2617#2626#0" expanded="true" />
-            <element signature="e#2968#2977#0" expanded="true" />
-            <element signature="e#2996#3005#0" expanded="true" />
-            <element signature="e#3347#3356#0" expanded="true" />
-            <element signature="e#3375#3384#0" expanded="true" />
-            <element signature="e#3726#3735#0" expanded="true" />
-            <element signature="e#3754#3763#0" expanded="true" />
-            <element signature="e#4779#4788#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../BasicGame/src/Assets/json/BasicGame2.json">
+    <entry file="file://$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/EnemyControl1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2646">
-          <caret line="126" column="18" lean-forward="false" selection-start-line="126" selection-start-column="18" selection-end-line="126" selection-end-column="18" />
-          <folding />
+        <state relative-caret-position="21">
+          <caret line="1" column="54" lean-forward="false" selection-start-line="1" selection-start-column="54" selection-end-line="1" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#901#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/BasicGame.java">
+    <entry file="file://$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/PlayerControl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="154" column="52" lean-forward="false" selection-start-line="154" selection-start-column="52" selection-end-line="154" selection-end-column="52" />
+        <state relative-caret-position="294">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
           <folding>
+            <element signature="e#0#2091#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#1067#1068#0" expanded="true" />
-            <element signature="e#1144#1145#0" expanded="true" />
-            <element signature="e#1327#1328#0" expanded="true" />
-            <element signature="e#1405#1406#0" expanded="true" />
-            <element signature="e#1580#1581#0" expanded="true" />
-            <element signature="e#1657#1658#0" expanded="true" />
-            <element signature="e#1853#1854#0" expanded="true" />
-            <element signature="e#1930#1931#0" expanded="true" />
-            <element signature="e#8201#8202#0" expanded="true" />
-            <element signature="e#8225#8226#0" expanded="true" />
+            <element signature="e#523#524#0" expanded="true" />
+            <element signature="e#677#678#0" expanded="true" />
+            <element signature="e#1290#1291#0" expanded="true" />
+            <element signature="e#1439#1440#0" expanded="true" />
+            <element signature="e#1988#1989#0" expanded="true" />
+            <element signature="e#2085#2086#0" expanded="true" />
           </folding>
         </state>
       </provider>

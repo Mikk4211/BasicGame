@@ -1,3 +1,5 @@
+/* @Author Mikk4211 https://github.com/Mikk4211 */
+/* EASJ Datamatiker 2. semester, Basic Game Project */
 package mikkel.sorensen;
 
 import com.almasb.fxgl.app.FXGL;
