@@ -8,8 +8,11 @@ import com.almasb.fxgl.input.UserAction;
 import com.almasb.fxgl.physics.CollisionHandler;
 import com.almasb.fxgl.physics.PhysicsControl;
 import com.almasb.fxgl.settings.GameSettings;
+import com.almasb.fxgl.time.TimerAction;
 import javafx.scene.input.KeyCode;
 import javafx.scene.text.Text;
+import javafx.util.Duration;
+
 import java.util.Map;
 
 
@@ -134,8 +137,9 @@ public class BasicGame extends GameApplication{
                         getGameWorld().setLevelFromMap("BasicGame3.json");
                         player.getControl(PhysicsControl.class).reposition(spawn.getPosition());
                         getGameWorld().spawn("enemy", 300, 50);
-                        getGameWorld().spawn("enemy", 400, 50);
-
+                        getGameWorld().spawn("enemy1", 400, 50);
+                        getGameWorld().spawn("enemy", 620, 50);
+                        getGameWorld().spawn("enemy1", 870, 50);
                     });
                 }
             });
@@ -149,8 +153,10 @@ public class BasicGame extends GameApplication{
                     getGameWorld().setLevelFromMap("BasicGame4.json");
                     player.getControl(PhysicsControl.class).reposition(spawn.getPosition());
                     getGameWorld().spawn("enemy", 570, 50);
-                    getGameWorld().spawn("enemy", 100, 50);
+                    getGameWorld().spawn("enemy1", 100, 50);
                     getGameWorld().spawn("enemy", 700, 50);
+                    getGameWorld().spawn("enemy1", 900, 200);
+
                 });
             }
         });
@@ -164,29 +170,45 @@ public class BasicGame extends GameApplication{
                     player.getControl(PhysicsControl.class).reposition(spawn.getPosition());
                     getGameWorld().spawn("enemy", 600, 50);
                     getGameWorld().spawn("enemy", 100, 50);
-                    getGameWorld().spawn("enemy", 820, 50);
+                    getGameWorld().spawn("enemy1", 820, 50);
+                    getGameWorld().spawn("enemy", 420, 400);
+                    getGameWorld().spawn("enemy1", 800, 520);
                 });
             }
         });
 
         /* level 5 - 6 */
-        /*getPhysicsWorld().addCollisionHandler(new CollisionHandler(BasicGameType.PLAYER, BasicGameType.DOOR4) {
+        getPhysicsWorld().addCollisionHandler(new CollisionHandler(BasicGameType.PLAYER, BasicGameType.DOOR4) {
             Entity spawn = new Entity();
             @Override
             protected void onCollisionBegin(Entity player, Entity door4){
-                getDisplay().showMessageBox("Level Complete!", () ->{
-                    getGameWorld().setLevelFromMap("BasicGame5.json");
+                getDisplay().showMessageBox("Level 5 Complete!", () ->{
+                    getGameWorld().setLevelFromMap("BasicGame6.json");
                     player.getControl(PhysicsControl.class).reposition(spawn.getPosition());
+                    getGameWorld().spawn("enemy1", 700, 400);
+                    getGameWorld().spawn("enemy", 920, 260);
+                    getGameWorld().spawn("enemy1", 518, 409);
+                    getGameWorld().spawn("enemy", 200, 470);
+                    getGameWorld().spawn("enemy1", 660, 124);
                 });
             }
-        }); */
+        });
+
+        /* Finish */
+        getPhysicsWorld().addCollisionHandler(new CollisionHandler(BasicGameType.PLAYER, BasicGameType.DOOR5) {
+            @Override
+            protected void onCollisionBegin(Entity player, Entity door5) {
+                getDisplay().showMessageBox("You have finished Basic Game, well done!");
+            }
+        });
     }
 
     @Override
     protected void initUI() {
+       int coinsGathered = 0;
         Text textPixels = new Text();
-        textPixels.setTranslateX(15);//UI på 10X
-        textPixels.setTranslateY(15);//UI på 10Y
+        textPixels.setTranslateX(15);   //UI på 15X
+        textPixels.setTranslateY(15);   //UI på 15Y
 
         getGameScene().addUINode(textPixels); //tilføjer UI til scenen/spillet.
         textPixels.setText("Coins Gathered: ");

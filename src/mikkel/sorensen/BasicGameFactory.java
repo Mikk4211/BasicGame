@@ -40,7 +40,7 @@ public class BasicGameFactory implements EntityFactory{
         return Entities.builder()
                 .type(BasicGameType.ENEMY)
                 .from(data)
-                .viewFromNodeWithBBox(new Rectangle(40,40,Color.RED))
+                .bbox(new HitBox(BoundingShape.box(17,25)))
                 .with(new CollidableComponent(true))
                 .with(physics)
                 .with(new EnemyControl1())
@@ -95,6 +95,15 @@ public class BasicGameFactory implements EntityFactory{
     public Entity newDoor4(SpawnData data) {
         return Entities.builder()
                 .type(BasicGameType.DOOR4)
+                .from(data)
+                .bbox(new HitBox(BoundingShape.box(data.<Integer>get("width"), data.<Integer>get("height"))))
+                .with(new CollidableComponent(true))
+                .build();
+    }
+    @Spawns("door5")     // Dør 5
+    public Entity newDoor5(SpawnData data) {
+        return Entities.builder()
+                .type(BasicGameType.DOOR5)
                 .from(data)
                 .bbox(new HitBox(BoundingShape.box(data.<Integer>get("width"), data.<Integer>get("height"))))
                 .with(new CollidableComponent(true))
