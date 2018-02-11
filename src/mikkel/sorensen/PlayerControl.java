@@ -40,22 +40,17 @@ public class PlayerControl extends Control {
         texture.setAnimationChannel(isMoving() ? animWalk : animIdle);
     }
 
-
     public void left() {                // Definerer venstre
         physics.setVelocityX(-125);
         getEntity().setScaleX(-1);      // Gør at karakteren kigger til venstre
     }
-
     public void right() {               // Definerer højre
         physics.setVelocityX(125);
         getEntity().setScaleX(1);       // Gør at karakteren kigger til højre.
     }
-
     public void jump() {                // Definerer hop
-
         if (physics.getVelocityY() == 0) {
             physics.setVelocityY(-400);
-
         }
     }
     public void stop() {                // Gør at karakteren kan lave et full stop

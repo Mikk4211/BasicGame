@@ -55,7 +55,8 @@ public class BasicGameFactory implements EntityFactory{
                 .bbox(new HitBox(BoundingShape.box(data.<Integer>get("width"), data.<Integer>get("height"))))
                 .with(new PhysicsComponent())
                 .build();
-    }@Spawns("door")     // Dør der går til et nyt level
+    }
+    @Spawns("door")     // Dør der går til et nyt level
     public Entity newDoor(SpawnData data) {
         return Entities.builder()
                 .type(BasicGameType.DOOR)

@@ -119,9 +119,17 @@ public class BasicGame extends GameApplication{
                 Entity spawn = new Entity();                        // Laver et spawn entity
                 @Override
                 protected void onCollisionBegin(Entity player, Entity door){
-                    getDisplay().showMessageBox("Level 1 Complete!", () -> {          // Giver dig en messagebox, der siger at du har klaret levellet.
-                        getGameWorld().setLevelFromMap("BasicGame2.json");          // Sætter nyt map
-                        player.getControl(PhysicsControl.class).reposition(spawn.getPosition()); //Definerer hvor man spawner efter at have gået igennem en dør
+
+                    /*Giver dig en messagebox, der siger at du har klaret levellet. */
+                    getDisplay().showMessageBox("Level 1 Complete!", () -> {
+
+                        /* Sætter et nyt map */
+                        getGameWorld().setLevelFromMap("BasicGame2.json");
+
+                        /* Definerer hvor man spawner, efter at have gået igennem døren */
+                        player.getControl(PhysicsControl.class).reposition(spawn.getPosition());
+
+                        /* Spawn af enemies */
                         getGameWorld().spawn("enemy", 320, 50);
                         getGameWorld().spawn("enemy", 550, 50);
                     });
@@ -203,6 +211,7 @@ public class BasicGame extends GameApplication{
         });
     }
 
+    /* UI til indsamling af coins */
     @Override
     protected void initUI() {
        int coinsGathered = 0;
