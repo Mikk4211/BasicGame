@@ -2,17 +2,23 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="BasicGame:jar" />
+      <artifact name="BasicGame:jar3" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c7c8117-c6d8-4211-8169-56e775e7e1fe" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BasicGame/src/out/artifacts/BasicGame_jar/BasicGame.jar" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BasicGame/logs/FXGL-10-feb.-2018-15.00.50.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BasicGame/logs/FXGL-10-feb.-2018-15.03.24.log" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BasicGame/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../BasicGame/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/BasicGame_jar3.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/FXGL-10-feb.-2018-15.14.37.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/FXGL-10-feb.-2018-15.22.45.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/FXGL-10-feb.-2018-15.29.04.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/FXGL-10-feb.-2018-15.32.16.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/out/artifacts/BasicGame_jar/BasicGame.jar" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/BasicGame_jar.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/BasicGame_jar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mikkel/sorensen/BasicGame.java" afterPath="$PROJECT_DIR$/src/mikkel/sorensen/BasicGame.java" />
     </list>
-    <ignored path="$PROJECT_DIR$/../BasicGame/out/" />
+    <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,63 +28,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="BasicGame.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/BasicGame.java">
+      <file leaf-file-name="BasicGame.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/mikkel/sorensen/BasicGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="214" column="13" lean-forward="false" selection-start-line="214" selection-start-column="13" selection-end-line="214" selection-end-column="13" />
+            <state relative-caret-position="365">
+              <caret line="214" column="29" lean-forward="true" selection-start-line="214" selection-start-column="29" selection-end-line="214" selection-end-column="29" />
               <folding>
-                <element signature="e#0#9818#0" expanded="true" />
+                <element signature="e#0#9781#0" expanded="true" />
                 <element signature="imports" expanded="true" />
-                <element signature="e#1151#1152#0" expanded="true" />
-                <element signature="e#1228#1229#0" expanded="true" />
-                <element signature="e#1411#1412#0" expanded="true" />
-                <element signature="e#1489#1490#0" expanded="true" />
-                <element signature="e#1664#1665#0" expanded="true" />
-                <element signature="e#1741#1742#0" expanded="true" />
-                <element signature="e#1937#1938#0" expanded="true" />
-                <element signature="e#2014#2015#0" expanded="true" />
-                <element signature="e#2285#2286#0" expanded="true" />
-                <element signature="e#2388#2389#0" expanded="true" />
-                <element signature="e#9768#9769#0" expanded="true" />
-                <element signature="e#9792#9793#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="BasicGameFactory.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/BasicGameFactory.java">
+        <entry file="file://$PROJECT_DIR$/src/mikkel/sorensen/BasicGameFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1210">
+            <state relative-caret-position="1050">
               <caret line="60" column="33" lean-forward="false" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
               <folding>
                 <element signature="e#0#5627#0" expanded="true" />
                 <element signature="imports" expanded="true" />
-                <element signature="e#1909#1918#0" expanded="true" />
-                <element signature="e#1937#1946#0" expanded="true" />
-                <element signature="e#2301#2310#0" expanded="true" />
-                <element signature="e#2329#2338#0" expanded="true" />
-                <element signature="e#2680#2689#0" expanded="true" />
-                <element signature="e#2708#2717#0" expanded="true" />
-                <element signature="e#3059#3068#0" expanded="true" />
-                <element signature="e#3087#3096#0" expanded="true" />
-                <element signature="e#3438#3447#0" expanded="true" />
-                <element signature="e#3466#3475#0" expanded="true" />
-                <element signature="e#3817#3826#0" expanded="true" />
-                <element signature="e#3845#3854#0" expanded="true" />
-                <element signature="e#4196#4205#0" expanded="true" />
-                <element signature="e#4224#4233#0" expanded="true" />
-                <element signature="e#5249#5258#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="BasicGameType.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/BasicGameType.java">
+        <entry file="file://$PROJECT_DIR$/src/mikkel/sorensen/BasicGameType.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
+            <state relative-caret-position="84">
               <caret line="5" column="41" lean-forward="false" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
               <folding>
                 <element signature="e#0#249#0" expanded="true" />
@@ -88,9 +67,9 @@
         </entry>
       </file>
       <file leaf-file-name="PlayerControl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/PlayerControl.java">
+        <entry file="file://$PROJECT_DIR$/src/mikkel/sorensen/PlayerControl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-13">
+            <state relative-caret-position="63">
               <caret line="3" column="24" lean-forward="false" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
               <folding>
                 <element signature="e#0#2086#0" expanded="true" />
@@ -107,9 +86,9 @@
         </entry>
       </file>
       <file leaf-file-name="EnemyControl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/EnemyControl.java">
+        <entry file="file://$PROJECT_DIR$/src/mikkel/sorensen/EnemyControl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
+            <state relative-caret-position="525">
               <caret line="27" column="48" lean-forward="false" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
               <folding>
                 <element signature="e#0#1702#0" expanded="true" />
@@ -119,10 +98,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EnemyControl1.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/EnemyControl1.java">
+      <file leaf-file-name="EnemyControl1.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/mikkel/sorensen/EnemyControl1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="683">
+            <state relative-caret-position="483">
               <caret line="34" column="30" lean-forward="false" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
               <folding>
                 <element signature="e#0#1671#0" expanded="true" />
@@ -149,7 +128,7 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../BasicGame" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -159,19 +138,20 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../BasicGame/src/BasicGameFactory.java" />
-        <option value="$PROJECT_DIR$/../BasicGame/src/BasicGame.java" />
-        <option value="$PROJECT_DIR$/../BasicGame/src/Mikkel/Sorensen/Assets/json/BasicGame.json" />
-        <option value="$PROJECT_DIR$/../BasicGame/src/Mikkel/Sorensen/BasicGame.java" />
-        <option value="$PROJECT_DIR$/../BasicGame/src/Mikkel/Sorensen/BasicGameFactory.java" />
-        <option value="$PROJECT_DIR$/../BasicGame/src/Assets/json/BasicGame.json" />
-        <option value="$PROJECT_DIR$/../BasicGame/src/Assets/json/BasicGame2.json" />
-        <option value="$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/EnemyControl.java" />
-        <option value="$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/BasicGameType.java" />
-        <option value="$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/BasicGameFactory.java" />
-        <option value="$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/PlayerControl.java" />
-        <option value="$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/BasicGame.java" />
-        <option value="$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/EnemyControl1.java" />
+        <option value="$PROJECT_DIR$/src/BasicGameFactory.java" />
+        <option value="$PROJECT_DIR$/src/BasicGame.java" />
+        <option value="$PROJECT_DIR$/src/Mikkel/Sorensen/Assets/json/BasicGame.json" />
+        <option value="$PROJECT_DIR$/src/Mikkel/Sorensen/BasicGame.java" />
+        <option value="$PROJECT_DIR$/src/Mikkel/Sorensen/BasicGameFactory.java" />
+        <option value="$PROJECT_DIR$/src/Assets/json/BasicGame.json" />
+        <option value="$PROJECT_DIR$/src/Assets/json/BasicGame2.json" />
+        <option value="$PROJECT_DIR$/src/mikkel/sorensen/EnemyControl.java" />
+        <option value="$PROJECT_DIR$/src/mikkel/sorensen/BasicGameType.java" />
+        <option value="$PROJECT_DIR$/src/mikkel/sorensen/BasicGameFactory.java" />
+        <option value="$PROJECT_DIR$/src/mikkel/sorensen/PlayerControl.java" />
+        <option value="$PROJECT_DIR$/src/mikkel/sorensen/EnemyControl1.java" />
+        <option value="$PROJECT_DIR$/src/mikkel/sorensen/BasicGame.java" />
+        <option value="$PROJECT_DIR$/out/production/BasicGame/mikkel/sorensen/BasicGame$1.class" />
       </list>
     </option>
   </component>
@@ -203,7 +183,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -220,43 +199,44 @@
               <item name="BasicGame" type="b2602c69:ProjectViewProjectNode" />
               <item name="BasicGame" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="Assets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="BasicGame" type="b2602c69:ProjectViewProjectNode" />
               <item name="BasicGame" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+              <item name="sorensen" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="BasicGame" type="b2602c69:ProjectViewProjectNode" />
               <item name="BasicGame" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-              <item name="BasicGame_jar" type="462c0819:PsiDirectoryNode" />
+              <item name="BasicGame_jar3" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/fxgl-0.4.1-uber.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Assets" />
     <property name="project.structure.last.edited" value="Artifacts" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\BasicGame\src" />
+    </key>
+    <key name="OPEN_URL_DIALOG">
+      <recent name="https://github.com/Mikk4211/BasicGame.git" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\BasicGame\src\Assets\textures" />
@@ -282,7 +262,7 @@
       <option name="MAIN_CLASS_NAME" value="mikkel.sorensen.BasicGame" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../BasicGame" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
@@ -293,12 +273,22 @@
     </configuration>
     <configuration name="BasicGame.jar (1)" type="JarApplication" factoryName="JAR Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="JAR_PATH" value="$PROJECT_DIR$/../BasicGame/src/out/artifacts/BasicGame_jar/BasicGame.jar" />
+      <option name="JAR_PATH" value="$PROJECT_DIR$/src/out/artifacts/BasicGame_jar/BasicGame.jar" />
+      <envs />
+    </configuration>
+    <configuration name="BasicGame.jar (2)" type="JarApplication" factoryName="JAR Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="JAR_PATH" value="$PROJECT_DIR$/src/out/artifacts/BasicGame_jar2/BasicGame.jar" />
+      <envs />
+    </configuration>
+    <configuration name="BasicGame.jar (3)" type="JarApplication" factoryName="JAR Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="JAR_PATH" value="$PROJECT_DIR$/src/out/artifacts/BasicGame_jar3/BasicGame.jar" />
       <envs />
     </configuration>
     <configuration name="BasicGame.jar" type="JarApplication" factoryName="JAR Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="JAR_PATH" value="$PROJECT_DIR$/../BasicGame/out/artifacts/BasicGame_jar/BasicGame.jar" />
+      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/BasicGame_jar/BasicGame.jar" />
       <envs />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -313,7 +303,7 @@
       <option name="MAIN_CLASS_NAME" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../BasicGame" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
@@ -382,16 +372,20 @@
       <properties />
       <listeners />
     </configuration>
-    <list size="3">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.BasicGame" />
       <item index="1" class="java.lang.String" itemvalue="JAR Application.BasicGame.jar" />
       <item index="2" class="java.lang.String" itemvalue="JAR Application.BasicGame.jar (1)" />
+      <item index="3" class="java.lang.String" itemvalue="JAR Application.BasicGame.jar (2)" />
+      <item index="4" class="java.lang.String" itemvalue="JAR Application.BasicGame.jar (3)" />
     </list>
     <recent_temporary>
-      <list size="3">
+      <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Application.BasicGame" />
-        <item index="1" class="java.lang.String" itemvalue="JAR Application.BasicGame.jar (1)" />
-        <item index="2" class="java.lang.String" itemvalue="JAR Application.BasicGame.jar" />
+        <item index="1" class="java.lang.String" itemvalue="JAR Application.BasicGame.jar (3)" />
+        <item index="2" class="java.lang.String" itemvalue="JAR Application.BasicGame.jar (2)" />
+        <item index="3" class="java.lang.String" itemvalue="JAR Application.BasicGame.jar (1)" />
+        <item index="4" class="java.lang.String" itemvalue="JAR Application.BasicGame.jar" />
       </list>
     </recent_temporary>
   </component>
@@ -409,7 +403,8 @@
       <option name="presentableId" value="Default" />
       <updated>1517221364765</updated>
       <workItem from="1517221370990" duration="10760000" />
-      <workItem from="1517242436107" duration="77321000" />
+      <workItem from="1517242436107" duration="79750000" />
+      <workItem from="1518517132657" duration="609000" />
     </task>
     <task id="LOCAL-00001" summary="Packages">
       <created>1517231460623</created>
@@ -572,14 +567,22 @@
       <option name="project" value="LOCAL" />
       <updated>1518513881875</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Jar fil tilføjet.">
+      <created>1518514669241</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1518514669241</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88081000" />
+    <option name="totallyTimeSpent" value="91119000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -589,19 +592,19 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289183" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289183" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -643,13 +646,13 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/EnemyControl.java</url>
+          <url>file://$PROJECT_DIR$/src/mikkel/sorensen/EnemyControl.java</url>
           <line>17</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/PlayerControl.java</url>
+          <url>file://$PROJECT_DIR$/src/mikkel/sorensen/PlayerControl.java</url>
           <line>38</line>
           <properties class="mikkel.sorensen.PlayerControl" method="onUpdate">
             <option name="EMULATED" value="true" />
@@ -662,185 +665,31 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/BasicGame.java">
+    <entry file="file://$PROJECT_DIR$/src/mikkel/sorensen/BasicGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#9818#0" expanded="true" />
+            <element signature="e#0#9781#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#1151#1152#0" expanded="true" />
-            <element signature="e#1228#1229#0" expanded="true" />
-            <element signature="e#1411#1412#0" expanded="true" />
-            <element signature="e#1489#1490#0" expanded="true" />
-            <element signature="e#1664#1665#0" expanded="true" />
-            <element signature="e#1741#1742#0" expanded="true" />
-            <element signature="e#1937#1938#0" expanded="true" />
-            <element signature="e#2014#2015#0" expanded="true" />
-            <element signature="e#2285#2286#0" expanded="true" />
-            <element signature="e#2388#2389#0" expanded="true" />
-            <element signature="e#9768#9769#0" expanded="true" />
-            <element signature="e#9792#9793#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/BasicGameFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/mikkel/sorensen/BasicGameFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="19" column="45" lean-forward="false" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#5627#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="e#1909#1918#0" expanded="true" />
-            <element signature="e#1937#1946#0" expanded="true" />
-            <element signature="e#2301#2310#0" expanded="true" />
-            <element signature="e#2329#2338#0" expanded="true" />
-            <element signature="e#2680#2689#0" expanded="true" />
-            <element signature="e#2708#2717#0" expanded="true" />
-            <element signature="e#3059#3068#0" expanded="true" />
-            <element signature="e#3087#3096#0" expanded="true" />
-            <element signature="e#3438#3447#0" expanded="true" />
-            <element signature="e#3466#3475#0" expanded="true" />
-            <element signature="e#3817#3826#0" expanded="true" />
-            <element signature="e#3845#3854#0" expanded="true" />
-            <element signature="e#4196#4205#0" expanded="true" />
-            <element signature="e#4224#4233#0" expanded="true" />
-            <element signature="e#5249#5258#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../BasicGame/src/Assets/Assets.java" />
-    <entry file="file://$PROJECT_DIR$/../BasicGame/src/Assets/textures/RPGpack_sheet_2X.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../BasicGame/src/Assets/json/BasicGame.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="49" column="18" lean-forward="false" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Downloads/fxgl-0.4.1-uber.jar!/com/almasb/fxgl/entity/component/ViewComponent.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="882">
-          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../BasicGame/src/Assets/json/BasicGame3.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3927">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../Program Files/Java/jdk1.8.0_144/src.zip!/java/lang/Runnable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="67" column="25" lean-forward="false" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Downloads/fxgl-0.4.1-uber.jar!/com/almasb/fxgl/physics/CollisionHandler.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="11" column="19" lean-forward="false" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../BasicGame/src/Assets/json/BasicGame4.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../BasicGame/src/Assets/json/BasicGame5.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../BasicGame/src/Assets/json/BasicGame2.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2646">
-          <caret line="126" column="18" lean-forward="false" selection-start-line="126" selection-start-column="18" selection-end-line="126" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../BasicGame/src/Assets/json/BasicGame6.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/BasicGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="214" column="13" lean-forward="false" selection-start-line="214" selection-start-column="13" selection-end-line="214" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#9818#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="e#1151#1152#0" expanded="true" />
-            <element signature="e#1228#1229#0" expanded="true" />
-            <element signature="e#1411#1412#0" expanded="true" />
-            <element signature="e#1489#1490#0" expanded="true" />
-            <element signature="e#1664#1665#0" expanded="true" />
-            <element signature="e#1741#1742#0" expanded="true" />
-            <element signature="e#1937#1938#0" expanded="true" />
-            <element signature="e#2014#2015#0" expanded="true" />
-            <element signature="e#2285#2286#0" expanded="true" />
-            <element signature="e#2388#2389#0" expanded="true" />
-            <element signature="e#9768#9769#0" expanded="true" />
-            <element signature="e#9792#9793#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/BasicGameFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1210">
+        <state relative-caret-position="1050">
           <caret line="60" column="33" lean-forward="false" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
           <folding>
             <element signature="e#0#5627#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#1909#1918#0" expanded="true" />
-            <element signature="e#1937#1946#0" expanded="true" />
-            <element signature="e#2301#2310#0" expanded="true" />
-            <element signature="e#2329#2338#0" expanded="true" />
-            <element signature="e#2680#2689#0" expanded="true" />
-            <element signature="e#2708#2717#0" expanded="true" />
-            <element signature="e#3059#3068#0" expanded="true" />
-            <element signature="e#3087#3096#0" expanded="true" />
-            <element signature="e#3438#3447#0" expanded="true" />
-            <element signature="e#3466#3475#0" expanded="true" />
-            <element signature="e#3817#3826#0" expanded="true" />
-            <element signature="e#3845#3854#0" expanded="true" />
-            <element signature="e#4196#4205#0" expanded="true" />
-            <element signature="e#4224#4233#0" expanded="true" />
-            <element signature="e#5249#5258#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/BasicGameType.java">
+    <entry file="file://$PROJECT_DIR$/src/mikkel/sorensen/BasicGameType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
+        <state relative-caret-position="84">
           <caret line="5" column="41" lean-forward="false" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
           <folding>
             <element signature="e#0#249#0" expanded="true" />
@@ -848,9 +697,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/PlayerControl.java">
+    <entry file="file://$PROJECT_DIR$/src/mikkel/sorensen/EnemyControl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-13">
+        <state relative-caret-position="525">
+          <caret line="27" column="48" lean-forward="false" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#1702#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mikkel/sorensen/PlayerControl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
           <caret line="3" column="24" lean-forward="false" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
           <folding>
             <element signature="e#0#2086#0" expanded="true" />
@@ -865,20 +725,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/EnemyControl.java">
+    <entry file="file://$PROJECT_DIR$/src/mikkel/sorensen/EnemyControl1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="27" column="48" lean-forward="false" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
-          <folding>
-            <element signature="e#0#1702#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/EnemyControl1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="683">
+        <state relative-caret-position="483">
           <caret line="34" column="30" lean-forward="false" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
           <folding>
             <element signature="e#0#1671#0" expanded="true" />
@@ -889,13 +738,189 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/mikkel/sorensen/BasicGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9781#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mikkel/sorensen/BasicGameFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="19" column="45" lean-forward="false" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#5627#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Assets/Assets.java" />
+    <entry file="file://$PROJECT_DIR$/src/Assets/textures/RPGpack_sheet_2X.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Assets/json/BasicGame.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="49" column="18" lean-forward="false" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Downloads/fxgl-0.4.1-uber.jar!/com/almasb/fxgl/entity/component/ViewComponent.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="882">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Assets/json/BasicGame3.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3927">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/lang/Runnable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="67" column="25" lean-forward="false" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Downloads/fxgl-0.4.1-uber.jar!/com/almasb/fxgl/physics/CollisionHandler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="11" column="19" lean-forward="false" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Assets/json/BasicGame4.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Assets/json/BasicGame5.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Assets/json/BasicGame2.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2646">
+          <caret line="126" column="18" lean-forward="false" selection-start-line="126" selection-start-column="18" selection-end-line="126" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Assets/json/BasicGame6.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mikkel/sorensen/BasicGameType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="5" column="41" lean-forward="false" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#249#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mikkel/sorensen/PlayerControl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="24" lean-forward="false" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#2086#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#523#524#0" expanded="true" />
+            <element signature="e#677#678#0" expanded="true" />
+            <element signature="e#1290#1291#0" expanded="true" />
+            <element signature="e#1439#1440#0" expanded="true" />
+            <element signature="e#1983#1984#0" expanded="true" />
+            <element signature="e#2080#2081#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mikkel/sorensen/EnemyControl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="27" column="48" lean-forward="false" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#1702#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mikkel/sorensen/EnemyControl1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="34" column="30" lean-forward="false" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#1671#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#576#577#0" expanded="true" />
+            <element signature="e#730#731#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="https://github.com/Mikk4211/BasicGame.git">
+      <provider selected="true" editor-type-id="httpFileEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mikkel/sorensen/BasicGameFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1050">
+          <caret line="60" column="33" lean-forward="false" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#5627#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/BasicGame/mikkel/sorensen/BasicGame$1.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mikkel/sorensen/BasicGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="214" column="29" lean-forward="true" selection-start-line="214" selection-start-column="29" selection-end-line="214" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#9781#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>BasicGame:jar</last-edited>
+          <last-edited>BasicGame:jar3</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

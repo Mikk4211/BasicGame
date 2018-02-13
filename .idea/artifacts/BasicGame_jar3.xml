@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="BasicGame:jar3">
+    <output-path>$PROJECT_DIR$/../BasicGame/src/out/artifacts/BasicGame_jar3</output-path>
+    <root id="archive" name="BasicGame.jar">
+      <element id="module-output" name="BasicGame" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/fxgl-0.4.1-uber.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

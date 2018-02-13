@@ -211,7 +211,6 @@ public class BasicGame extends GameApplication{
         });
     }
 
-    /* UI til indsamling af coins */
     @Override
     protected void initUI() {
        int coinsGathered = 0;

@@ -1,7 +1,10 @@
 <component name="ArtifactManager">
   <artifact type="jar" name="BasicGame:jar">
-    <output-path>$PROJECT_DIR$/../BasicGame/out/artifacts/BasicGame_jar</output-path>
+    <output-path>$PROJECT_DIR$/out/artifacts/BasicGame_jar</output-path>
     <root id="archive" name="BasicGame.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/src/out/artifacts/BasicGame_jar3/META-INF/MANIFEST.MF" />
+      </element>
       <element id="module-output" name="BasicGame" />
       <element id="extracted-dir" path="$USER_HOME$/Downloads/fxgl-0.4.1-uber.jar" path-in-jar="/" />
     </root>
