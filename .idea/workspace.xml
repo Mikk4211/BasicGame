@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="BasicGame:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="5c7c8117-c6d8-4211-8169-56e775e7e1fe" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BasicGame/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../BasicGame/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/BasicGame.java" afterPath="$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/BasicGame.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/BasicGameFactory.java" afterPath="$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/BasicGameFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/PlayerControl.java" afterPath="$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/PlayerControl.java" />
     </list>
     <ignored path="$PROJECT_DIR$/../BasicGame/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -117,7 +119,7 @@
       <file leaf-file-name="EnemyControl1.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/EnemyControl1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
+            <state relative-caret-position="683">
               <caret line="34" column="30" lean-forward="false" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
               <folding>
                 <element signature="e#0#1671#0" expanded="true" />
@@ -162,11 +164,11 @@
         <option value="$PROJECT_DIR$/../BasicGame/src/Assets/json/BasicGame.json" />
         <option value="$PROJECT_DIR$/../BasicGame/src/Assets/json/BasicGame2.json" />
         <option value="$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/EnemyControl.java" />
-        <option value="$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/EnemyControl1.java" />
         <option value="$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/BasicGameType.java" />
         <option value="$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/BasicGameFactory.java" />
         <option value="$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/PlayerControl.java" />
         <option value="$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/BasicGame.java" />
+        <option value="$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/EnemyControl1.java" />
       </list>
     </option>
   </component>
@@ -205,6 +207,24 @@
             <path>
               <item name="BasicGame" type="b2602c69:ProjectViewProjectNode" />
               <item name="BasicGame" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BasicGame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BasicGame" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BasicGame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BasicGame" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BasicGame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BasicGame" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+              <item name="BasicGame_jar" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="BasicGame" type="b2602c69:ProjectViewProjectNode" />
@@ -250,9 +270,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/fxgl-0.4.1-uber.jar!/" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -389,7 +409,7 @@
       <option name="presentableId" value="Default" />
       <updated>1517221364765</updated>
       <workItem from="1517221370990" duration="10760000" />
-      <workItem from="1517242436107" duration="75350000" />
+      <workItem from="1517242436107" duration="76211000" />
     </task>
     <task id="LOCAL-00001" summary="Packages">
       <created>1517231460623</created>
@@ -524,15 +544,21 @@
       <option name="project" value="LOCAL" />
       <updated>1518273421041</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Comments.">
+      <created>1518361489869</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1518361489869</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86110000" />
+    <option name="totallyTimeSpent" value="86971000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -547,7 +573,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289183" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -588,7 +614,8 @@
     <MESSAGE value="Tilføjet en sjov lille sprite til enemies, så de er nu er min ven Matt..." />
     <MESSAGE value="Tilføjet respawn knap så man kan respawne ved at klikke R" />
     <MESSAGE value="Tilføjet et sidste level, samt added en masse enemies til tidligere maps. Yderligere tilføjet en sprite til enemy1 og inkluderet den i flere maps end kun 1." />
-    <option name="LAST_COMMIT_MESSAGE" value="Tilføjet et sidste level, samt added en masse enemies til tidligere maps. Yderligere tilføjet en sprite til enemy1 og inkluderet den i flere maps end kun 1." />
+    <MESSAGE value="Comments." />
+    <option name="LAST_COMMIT_MESSAGE" value="Comments." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -829,7 +856,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/EnemyControl1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
+        <state relative-caret-position="683">
           <caret line="34" column="30" lean-forward="false" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
           <folding>
             <element signature="e#0#1671#0" expanded="true" />
@@ -846,10 +873,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>BasicGame:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
