@@ -6,7 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c7c8117-c6d8-4211-8169-56e775e7e1fe" name="Default" comment="">
+    <list default="true" id="5c7c8117-c6d8-4211-8169-56e775e7e1fe" name="Default" comment="Jar fil tilføjet.">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BasicGame/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../BasicGame/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/../BasicGame/out/" />
@@ -23,7 +23,7 @@
         <entry file="file://$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/BasicGame.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
-              <caret line="214" column="13" lean-forward="true" selection-start-line="214" selection-start-column="13" selection-end-line="214" selection-end-column="13" />
+              <caret line="214" column="13" lean-forward="false" selection-start-line="214" selection-start-column="13" selection-end-line="214" selection-end-column="13" />
               <folding>
                 <element signature="e#0#9818#0" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -48,7 +48,7 @@
         <entry file="file://$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/BasicGameFactory.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-1210">
-              <caret line="60" column="33" lean-forward="true" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
+              <caret line="60" column="33" lean-forward="false" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
               <folding>
                 <element signature="e#0#5627#0" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -88,7 +88,7 @@
         <entry file="file://$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/PlayerControl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-13">
-              <caret line="3" column="24" lean-forward="true" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+              <caret line="3" column="24" lean-forward="false" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
               <folding>
                 <element signature="e#0#2086#0" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -107,7 +107,7 @@
         <entry file="file://$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/EnemyControl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="281">
-              <caret line="27" column="48" lean-forward="true" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
+              <caret line="27" column="48" lean-forward="false" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
               <folding>
                 <element signature="e#0#1702#0" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -207,24 +207,6 @@
             <path>
               <item name="BasicGame" type="b2602c69:ProjectViewProjectNode" />
               <item name="BasicGame" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BasicGame" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BasicGame" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BasicGame" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BasicGame" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BasicGame" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BasicGame" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-              <item name="BasicGame_jar" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="BasicGame" type="b2602c69:ProjectViewProjectNode" />
@@ -409,7 +391,7 @@
       <option name="presentableId" value="Default" />
       <updated>1517221364765</updated>
       <workItem from="1517221370990" duration="10760000" />
-      <workItem from="1517242436107" duration="76211000" />
+      <workItem from="1517242436107" duration="76368000" />
     </task>
     <task id="LOCAL-00001" summary="Packages">
       <created>1517231460623</created>
@@ -551,11 +533,18 @@
       <option name="project" value="LOCAL" />
       <updated>1518361489869</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Jar fil tilføjet.">
+      <created>1518513565519</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1518513565519</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86971000" />
+    <option name="totallyTimeSpent" value="87128000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -615,7 +604,8 @@
     <MESSAGE value="Tilføjet respawn knap så man kan respawne ved at klikke R" />
     <MESSAGE value="Tilføjet et sidste level, samt added en masse enemies til tidligere maps. Yderligere tilføjet en sprite til enemy1 og inkluderet den i flere maps end kun 1." />
     <MESSAGE value="Comments." />
-    <option name="LAST_COMMIT_MESSAGE" value="Comments." />
+    <MESSAGE value="Jar fil tilføjet." />
+    <option name="LAST_COMMIT_MESSAGE" value="Jar fil tilføjet." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -770,7 +760,7 @@
     <entry file="file://$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/BasicGame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
-          <caret line="214" column="13" lean-forward="true" selection-start-line="214" selection-start-column="13" selection-end-line="214" selection-end-column="13" />
+          <caret line="214" column="13" lean-forward="false" selection-start-line="214" selection-start-column="13" selection-end-line="214" selection-end-column="13" />
           <folding>
             <element signature="e#0#9818#0" expanded="true" />
             <element signature="imports" expanded="true" />
@@ -793,7 +783,7 @@
     <entry file="file://$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/BasicGameFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1210">
-          <caret line="60" column="33" lean-forward="true" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
+          <caret line="60" column="33" lean-forward="false" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
           <folding>
             <element signature="e#0#5627#0" expanded="true" />
             <element signature="imports" expanded="true" />
@@ -829,7 +819,7 @@
     <entry file="file://$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/PlayerControl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-13">
-          <caret line="3" column="24" lean-forward="true" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+          <caret line="3" column="24" lean-forward="false" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
           <folding>
             <element signature="e#0#2086#0" expanded="true" />
             <element signature="imports" expanded="true" />
@@ -846,7 +836,7 @@
     <entry file="file://$PROJECT_DIR$/../BasicGame/src/mikkel/sorensen/EnemyControl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="281">
-          <caret line="27" column="48" lean-forward="true" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
+          <caret line="27" column="48" lean-forward="false" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
           <folding>
             <element signature="e#0#1702#0" expanded="true" />
             <element signature="imports" expanded="true" />
