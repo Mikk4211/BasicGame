@@ -53,6 +53,7 @@ public class BasicGame extends GameApplication{
                 player.getControl(PlayerControl.class).jump();
             }
         }, KeyCode.W);
+
         /* Gør at man kan stoppe karakteren på stedet */
         getInput().addAction(new UserAction("Stop") {
             @Override
@@ -60,6 +61,7 @@ public class BasicGame extends GameApplication{
                 player.getControl(PlayerControl.class).stop();
             }
         }, KeyCode.S);
+
          /* Gør at man kan respawne on-demand, hvis man f.eks. ender ude for mappet. */
         getInput().addAction(new UserAction("Respawn") {
             Entity spawn = new Entity();
